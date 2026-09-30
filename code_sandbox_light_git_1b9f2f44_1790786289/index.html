@@ -1,0 +1,2116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoRanking — Prompt Maestro de Desarrollo</title>
+  <meta name="description" content="Prompt maestro completo para el desarrollo del sistema EcoRanking: plataforma gamificada de reciclaje escolar con contenedores inteligentes." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♻️</text></svg>" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════════════════════ -->
+<header class="hero">
+  <div class="hero-badge">
+    <span class="dot"></span>
+    Prompt Maestro · Ingeniería de Software
+  </div>
+  <h1>
+    <span class="eco">Eco</span><span class="rank">Ranking</span>
+  </h1>
+  <p class="hero-subtitle">
+    Propuesta técnica integral para el desarrollo de una plataforma gamificada de reciclaje escolar con contenedores inteligentes, rankings por categoría y panel administrativo completo.
+  </p>
+  <div class="hero-meta">
+    <div class="hero-meta-item">
+      <span class="label">Tipo</span>
+      <span class="value">Plataforma Híbrida</span>
+    </div>
+    <div class="hero-meta-item">
+      <span class="label">Sector</span>
+      <span class="value">Educación / IoT</span>
+    </div>
+    <div class="hero-meta-item">
+      <span class="label">Secciones</span>
+      <span class="value">17 módulos</span>
+    </div>
+    <div class="hero-meta-item">
+      <span class="label">Categorías</span>
+      <span class="value">A (1–5) · B (6–11)</span>
+    </div>
+    <div class="hero-meta-item">
+      <span class="label">Estado</span>
+      <span class="value">✅ Propuesta lista</span>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════════
+     NAVEGACIÓN STICKY
+═══════════════════════════════════════════════════════════ -->
+<nav class="nav-sticky" aria-label="Navegación del documento">
+  <div class="nav-inner">
+    <a class="nav-btn" href="#sec-vision">1. Visión</a>
+    <a class="nav-btn" href="#sec-negocio">2. Negocio</a>
+    <a class="nav-btn" href="#sec-roles">3. Roles</a>
+    <a class="nav-btn" href="#sec-imagenes">4. Imágenes</a>
+    <a class="nav-btn" href="#sec-pantallas">5. Pantallas</a>
+    <a class="nav-btn" href="#sec-arquitectura">6. Arquitectura</a>
+    <a class="nav-btn" href="#sec-stack">7. Stack</a>
+    <a class="nav-btn" href="#sec-datos">8. Modelo</a>
+    <a class="nav-btn" href="#sec-funcionalidades">9. Funciones</a>
+    <a class="nav-btn" href="#sec-nfr">10. NFR</a>
+    <a class="nav-btn" href="#sec-carpetas">11. Carpetas</a>
+    <a class="nav-btn" href="#sec-endpoints">12. Endpoints</a>
+    <a class="nav-btn" href="#sec-plan">13. Plan</a>
+    <a class="nav-btn" href="#sec-pruebas">14. Pruebas</a>
+    <a class="nav-btn" href="#sec-docs">15. Docs</a>
+    <a class="nav-btn" href="#sec-instalacion">16. Instalación</a>
+    <a class="nav-btn" href="#sec-riesgos">17. Riesgos</a>
+    <a class="nav-btn" href="#sec-explicacion">💡 Explicación</a>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════
+     LAYOUT PRINCIPAL
+═══════════════════════════════════════════════════════════ -->
+<div class="main-layout">
+
+  <!-- ────────────── CONTENIDO ────────────── -->
+  <main class="content-area">
+
+    <!-- ══ SECCIÓN 1: VISIÓN GENERAL ══ -->
+    <article class="section" id="sec-vision">
+      <div class="section-header" onclick="toggleSection(this)">
+        <div class="section-num">1</div>
+        <span class="section-icon">🌿</span>
+        <h2>Visión General del Proyecto</h2>
+        <span class="toggle-icon">▼</span>
+      </div>
+      <div class="section-body">
+
+        <div class="highlight-box">
+          <p>
+            <strong>EcoRanking</strong> es una plataforma tecnológica híbrida diseñada para instituciones educativas, cuyo propósito es digitalizar, automatizar y gamificar las campañas de reciclaje escolar mediante contenedores inteligentes que validan en tiempo real cada depósito de material reciclable, acumulan puntos por salón y generan rankings competitivos por categoría escolar.
+          </p>
+        </div>
+
+        <h3>Objetivo Principal</h3>
+        <p>
+          Crear una plataforma web administrativa y de monitoreo que permita registrar, validar, acumular y visualizar puntos de reciclaje por salón de clase, generando rankings por categorías escolares (grados 1–5 y grados 6–11), con el fin de incentivar hábitos ambientales sostenibles a través de dinámicas de gamificación dentro de los colegios.
+        </p>
+
+        <h3>Problema Real que Soluciona</h3>
+        <p>
+          La mayoría de las campañas de reciclaje escolares fracasan por tres razones fundamentales: <strong>falta de seguimiento</strong>, <strong>ausencia de datos verificables</strong> y <strong>baja motivación sostenida</strong>. EcoRanking resuelve los tres frentes al mismo tiempo: digitaliza el proceso completo, valida cada depósito mediante hardware (cámara + sensor), convierte la participación en una competencia medible y transparente, y centraliza toda la información en un panel administrativo accesible desde cualquier dispositivo.
+        </p>
+
+        <h3>Contexto de Uso</h3>
+        <p>
+          El sistema opera dentro de planteles educativos donde contenedores inteligentes son instalados en puntos estratégicos del colegio (pasillos, patios, zonas de descanso). Cuando un estudiante deposita un objeto reciclable, la cámara integrada clasifica el material y el sensor de peso o presencia confirma el depósito físico. Solo si ambas validaciones son exitosas el sistema registra el evento y suma puntos al salón vinculado al contenedor o al perfil del estudiante registrado, según el modelo operativo definido.
+        </p>
+
+        <h3>Valor para la Institución</h3>
+        <ul>
+          <li>Fomenta cultura ambiental con evidencia cuantificable</li>
+          <li>Mide participación real de cada salón y categoría</li>
+          <li>Automatiza el control del reciclaje, eliminando registros manuales</li>
+          <li>Aporta datos institucionales para reportes de sostenibilidad</li>
+          <li>Mejora el compromiso estudiantil mediante incentivos (salida pedagógica)</li>
+          <li>Fortalece proyectos pedagógicos y programas de responsabilidad social</li>
+          <li>Escalable a múltiples sedes o instituciones en el futuro</li>
+        </ul>
+
+        <h3>Alcance General del Sistema</h3>
+        <div class="feat-grid">
+          <div class="feat-item"><span class="feat-icon">✅</span> Gestión de institución, grados, salones y periodos de competencia</div>
+          <div class="feat-item"><span class="feat-icon">✅</span> Vinculación de contenedores inteligentes a ubicaciones y salones</div>
+          <div class="feat-item"><span class="feat-icon">✅</span> Detección de eventos de reciclaje por cámara + sensor</div>
+          <div class="feat-item"><span class="feat-icon">✅</span> Asignación automática de puntos por depósito válido</div>
+          <div class="feat-item"><span class="feat-icon">✅</span> Rankings en tiempo real por categoría y periodo</div>
+          <div class="feat-item"><span class="feat-icon">✅</span> Panel administrativo con métricas, reportes e historial</div>
+          <div class="feat-item"><span class="feat-icon">✅</span> Gestión de incidencias y eventos sospechosos</div>
+          <div class="feat-item"><span class="feat-icon">✅</span> Auditoría completa de acciones y eventos del sistema</div>
+        </div>
+
+        <h3>Qué NO hace el Sistema</h3>
+        <ul>
+          <li>No procesa ni valida residuos que no sean materiales reciclables clasificados</li>
+          <li>No otorga puntos si la cámara detectó el objeto pero el sensor no confirmó el depósito</li>
+          <li>No reemplaza la gestión física ni la recolección de residuos</li>
+          <li>No funciona como ERP escolar, plataforma académica ni sistema de notas</li>
+          <li>No procesa pagos ni gestiona el premio directamente</li>
+        </ul>
+
+        <div class="stats-row">
+          <div class="stat-badge"><span class="stat-val">2</span><span class="stat-lbl">Categorías</span></div>
+          <div class="stat-badge"><span class="stat-val">11</span><span class="stat-lbl">Grados</span></div>
+          <div class="stat-badge"><span class="stat-val">5+</span><span class="stat-lbl">Roles</span></div>
+          <div class="stat-badge"><span class="stat-val">IoT</span><span class="stat-lbl">Hardware</span></div>
+          <div class="stat-badge"><span class="stat-val">∞</span><span class="stat-lbl">Escalable</span></div>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- ══ SECCIÓN 2: OBJETIVO DE NEGOCIO ══ -->
+    <article class="section" id="sec-negocio">
+      <div class="section-header" onclick="toggleSection(this)">
+        <div class="section-num">2</div>
+        <span class="section-icon">🎯</span>
+        <h2>Objetivo de Negocio</h2>
+        <span class="toggle-icon">▼</span>
+      </div>
+      <div class="section-body">
+
+        <p>
+          La institución educativa requiere un programa de reciclaje gamificado donde los salones de clase compiten entre sí por acumular la mayor cantidad de puntos durante un periodo determinado. El salón con la puntuación más alta dentro de su categoría obtiene como recompensa una <strong>salida pedagógica</strong>, incentivo de alto valor motivacional para la comunidad estudiantil.
+        </p>
+
+        <h3>Estructura de la Competencia</h3>
+
+        <div class="roles-grid">
+          <div class="role-card">
+            <div class="role-icon">🏫</div>
+            <div class="role-name">Categoría A</div>
+            <div class="role-desc">Grados 1 al 5. Competencia entre salones de primaria básica. Los puntos se acumulan de forma independiente dentro de esta categoría.</div>
+          </div>
+          <div class="role-card">
+            <div class="role-icon">🎓</div>
+            <div class="role-name">Categoría B</div>
+            <div class="role-desc">Grados 6 al 11. Competencia entre salones de bachillerato. Mismo mecanismo de acumulación, pero ranking separado.</div>
+          </div>
+        </div>
+
+        <h3>Mecánica de Puntuación</h3>
+        <p>
+          Cada vez que un estudiante deposita correctamente un material reciclable en un contenedor inteligente y el sistema valida el evento (cámara + sensor), el salón al que pertenece ese contenedor acumula puntos. La cantidad de puntos por evento puede ser fija (ej: 10 puntos por depósito) o variable según el tipo de material reciclable (ej: plástico = 5 pts, aluminio = 15 pts, cartón = 10 pts), lo cual es configurable por el administrador.
+        </p>
+
+        <h3>Periodo de Competencia</h3>
+        <p>
+          El administrador define el periodo de competencia (semanal, mensual, bimestral o por año escolar). Al cierre del periodo, el sistema calcula el ranking final y el administrador puede validar y publicar los ganadores por categoría antes de hacer el anuncio oficial.
+        </p>
+
+        <div class="info-box">
+          <p>
+            <strong>Supuesto técnico:</strong> cada contenedor inteligente está vinculado a una ubicación fija (zona del colegio). El sistema asocia cada contenedor a uno o más salones según la lógica operativa definida por la institución. La asociación predeterminada más robusta es: <em>el contenedor pertenece a una zona del colegio y cualquier estudiante identificado que deposite en él suma puntos a su salón registrado</em>. Si no hay identificación de estudiante, los puntos van al salón "de zona" configurado.
+          </p>
+        </div>
+
+        <h3>Indicadores Clave de Éxito</h3>
+        <ul>
+          <li>Número de depósitos válidos registrados por periodo</li>
+          <li>Puntos acumulados por salón, grado y categoría</li>
+          <li>Tasa de eventos inválidos o rechazados (calidad del proceso)</li>
+          <li>Participación activa de salones (cantidad de eventos únicos por salón)</li>
+          <li>Disponibilidad de los contenedores inteligentes (uptime del hardware)</li>
+          <li>Tiempo promedio de respuesta del sistema ante un evento de reciclaje</li>
+        </ul>
+
+      </div>
+    </article>
+
+    <!-- ══ SECCIÓN 3: USUARIOS Y ROLES ══ -->
+    <article class="section" id="sec-roles">
+      <div class="section-header" onclick="toggleSection(this)">
+        <div class="section-num">3</div>
+        <span class="section-icon">👥</span>
+        <h2>Usuarios, Roles y Permisos</h2>
+        <span class="toggle-icon">▼</span>
+      </div>
+      <div class="section-body">
+
+        <div class="roles-grid">
+          <div class="role-card">
+            <div class="role-icon">🛡️</div>
+            <div class="role-name">Administrador General</div>
+            <div class="role-desc">Control total del sistema. Configura la institución, grados, salones, periodos, reglas de puntuación, usuarios, dispositivos y tiene acceso a todos los reportes y auditorías.</div>
+          </div>
+          <div class="role-card">
+            <div class="role-icon">🌱</div>
+            <div class="role-name">Coordinador Ambiental</div>
+            <div class="role-desc">Docente responsable del programa. Visualiza rankings, revisa incidencias, descarga reportes pedagógicos y puede validar eventos en revisión. Sin acceso a configuración de sistema.</div>
+          </div>
+          <div class="role-card">
+            <div class="role-icon">🔧</div>
+            <div class="role-name">Técnico / Operador</div>
+            <div class="role-desc">Registra y monitorea contenedores inteligentes. Atiende fallos de hardware, revisa logs de dispositivo, reporta mantenimientos. Sin acceso a rankings ni datos académicos.</div>
+          </div>
+          <div class="role-card">
+            <div class="role-icon">👁️</div>
+            <div class="role-name">Visor Institucional</div>
+            <div class="role-desc">Directivos, rectoría o personal externo. Acceso de solo lectura a dashboards, rankings publicados y reportes institucionales. Sin acceso a gestión ni configuración.</div>
+          </div>
+          <div class="role-card">
+            <div class="role-icon">🏆</div>
+            <div class="role-name">Público Escolar</div>
+            <div class="role-desc">Estudiantes y docentes. Visualizan el ranking público o el avance de su salón en pantallas informativas instaladas en el colegio. Sin login ni acceso a administración.</div>
+          </div>
+        </div>
+
+        <h3>Matriz de Permisos por Rol</h3>
+        <div style="overflow-x:auto;">
+          <table class="perms-table">
+            <thead>
+              <tr>
+                <th>Función</th>
+                <th>Admin</th>
+                <th>Coordinador</th>
+                <th>Técnico</th>
+                <th>Visor</th>
+                <th>Público</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Configurar institución / grados / salones</td><td class="perm-yes">✓</td><td class="perm-no">✗</td><td class="perm-no">✗</td><td class="perm-no">✗</td><td class="perm-no">✗</td></tr>
+              <tr><td>Gestionar usuarios y roles</td><td class="perm-yes">✓</td><td class="perm-no">✗</td><td class="perm-no">✗</td><td class="perm-no">✗</td><td class="perm-no">✗</td></tr>
+              <tr><td>Configurar reglas de puntuación</td><td class="perm-yes">✓</td><td class="perm-no">✗</td><td class="perm-no">✗</td><td class="perm-no">✗</td><td class="perm-no">✗</td></tr>
+              <tr><td>Registrar y vincular contenedores</td><td class="perm-yes">✓</td><td class="perm-no">✗</td><td class="perm-yes">✓</td><td class="perm-no">✗</td><td class="perm-no">✗</td></tr>
+              <tr><td>Monitorear estado de dispositivos</td><td class="perm-yes">✓</td><td class="perm-no">✗</td><td class="perm-yes">✓</td><td class="perm-no">✗</td><td class="perm-no">✗</td></tr>
+              <tr><td>Ver rankings y dashboards</td><td class="perm-yes">✓</td><td class="perm-yes">✓</td><td class="perm-no">✗</td><td class="perm-yes">✓</td><td class="perm-partial">Solo público</td></tr>
+              <tr><td>Ver historial de reciclaje</td><td class="perm-yes">✓</td><td class="perm-yes">✓</td><td class="perm-no">✗</td><td class="perm-yes">✓</td><td class="perm-no">✗</td></tr>
+              <tr><td>Revisar y gestionar incidencias</td><td class="perm-yes">✓</td><td class="perm-yes">✓</td><td class="perm-partial">Técnico</td><td class="perm-no">✗</td><td class="perm-no">✗</td></tr>
+              <tr><td>Exportar reportes</td><td class="perm-yes">✓</td><td class="perm-yes">✓</td><td class="perm-no">✗</td><td class="perm-yes">✓</td><td class="perm-no">✗</td></tr>
+              <tr><td>Gestionar periodos de competencia</td><td class="perm-yes">✓</td><td class="perm-no">✗</td><td class="perm-no">✗</td><td class="perm-no">✗</td><td class="perm-no">✗</td></tr>
+              <tr><td>Validar ganadores y publicar resultados</td><td class="perm-yes">✓</td><td class="perm-partial">Revisa</td><td class="perm-no">✗</td><td class="perm-no">✗</td><td class="perm-no">✗</td></tr>
+              <tr><td>Ver logs de auditoría</td><td class="perm-yes">✓</td><td class="perm-no">✗</td><td class="perm-partial">Dispositivos</td><td class="perm-no">✗</td><td class="perm-no">✗</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="warning-box">
+          <p>
+            <strong>Principio de mínimo privilegio:</strong> cada rol accede únicamente a lo que necesita para cumplir su función. Los cambios en reglas de puntuación, cierre de periodos y publicación de ganadores son acciones exclusivas del Administrador General y quedan registradas en el log de auditoría con usuario, fecha, hora e IP.
+          </p>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- ══ SECCIÓN 4: ANÁLISIS DE IMÁGENES ══ -->
+    <article class="section" id="sec-imagenes">
+      <div class="section-header" onclick="toggleSection(this)">
+        <div class="section-num">4</div>
+        <span class="section-icon">🖼️</span>
+        <h2>Análisis de Imágenes y Referencias Visuales</h2>
+        <span class="toggle-icon">▼</span>
+      </div>
+      <div class="section-body">
+
+        <div class="info-box">
+          <p>
+            <strong>Nota profesional:</strong> No se han adjuntado imágenes en esta solicitud. Se procede a proponer la arquitectura visual, wireframes de referencia y esquemas de hardware de forma profesional, basándose en el contexto técnico completo del proyecto. Cuando se suministren imágenes reales (mockups, wireframes, esquemas del contenedor, branding), se deberán analizar y aplicar como base de ajuste sobre esta propuesta.
+          </p>
+        </div>
+
+        <h3>Identidad Visual Propuesta — EcoRanking</h3>
+        <p>
+          La identidad visual de EcoRanking debe comunicar tres valores simultáneamente: <strong>sostenibilidad ecológica</strong>, <strong>tecnología moderna</strong> y <strong>motivación escolar</strong>. El resultado es una interfaz limpia, enérgica y accesible, apropiada para uso por docentes, coordinadores y directivos en pantallas de escritorio, y también visible en paneles informativos de la institución.
+        </p>
+
+        <h4>Paleta de Colores</h4>
+        <div style="display:flex; flex-wrap:wrap; gap:12px; margin:14px 0;">
+          <div style="display:flex;align-items:center;gap:10px;background:#f9fafb;border:1px solid #e5e7eb;border-radius:8px;padding:10px 16px;">
+            <div style="width:32px;height:32px;border-radius:6px;background:#047857;"></div>
+            <div><div style="font-weight:700;font-size:0.85rem;">Verde Primario</div><div style="font-size:0.78rem;color:#6b7280;">#047857 — Identidad ecológica principal</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;background:#f9fafb;border:1px solid #e5e7eb;border-radius:8px;padding:10px 16px;">
+            <div style="width:32px;height:32px;border-radius:6px;background:#10b981;"></div>
+            <div><div style="font-weight:700;font-size:0.85rem;">Verde Acción</div><div style="font-size:0.78rem;color:#6b7280;">#10b981 — Botones y elementos interactivos</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;background:#f9fafb;border:1px solid #e5e7eb;border-radius:8px;padding:10px 16px;">
+            <div style="width:32px;height:32px;border-radius:6px;background:#0d9488;"></div>
+            <div><div style="font-weight:700;font-size:0.85rem;">Teal Tecnológico</div><div style="font-size:0.78rem;color:#6b7280;">#0d9488 — Gradientes, encabezados</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;background:#f9fafb;border:1px solid #e5e7eb;border-radius:8px;padding:10px 16px;">
+            <div style="width:32px;height:32px;border-radius:6px;background:#f59e0b;"></div>
+            <div><div style="font-weight:700;font-size:0.85rem;">Ámbar Premio</div><div style="font-size:0.78rem;color:#6b7280;">#f59e0b — Rankings, trofeos, logros</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;background:#f9fafb;border:1px solid #e5e7eb;border-radius:8px;padding:10px 16px;">
+            <div style="width:32px;height:32px;border-radius:6px;background:#1f2937;"></div>
+            <div><div style="font-weight:700;font-size:0.85rem;">Gris Oscuro</div><div style="font-size:0.78rem;color:#6b7280;">#1f2937 — Textos principales</div></div>
+          </div>
+        </div>
+
+        <h4>Tipografía</h4>
+        <ul>
+          <li><strong>Inter</strong> (Google Fonts) — fuente principal para UI, títulos y texto de interfaz. Excelente legibilidad en pantalla.</li>
+          <li><strong>JetBrains Mono</strong> — para campos técnicos: IDs de dispositivos, logs, códigos de evento.</li>
+        </ul>
+
+        <h4>Referencia al Contenedor Inteligente</h4>
+        <p>
+          El contenedor inteligente propuesto consta de: una estructura física de contenedor estándar modificada, una cámara instalada en la abertura superior o lateral (orientada al área de depósito), un sensor de presencia o peso en el interior, y un módulo de conectividad (Wi-Fi o Ethernet) que envía los eventos al backend mediante MQTT o HTTP. En el exterior del contenedor debe existir una pantalla LED o indicador luminoso que confirme visualmente al estudiante que su depósito fue registrado.
+        </p>
+
+        <div class="warning-box">
+          <p>
+            <strong>Pendiente de resolución al recibir imágenes:</strong> posición exacta de la cámara respecto al área de depósito, capacidad del procesador embebido (Raspberry Pi, Arduino o similar), tipo de sensor utilizado (IR, ultrasonido, peso), protocolo de comunicación preferido, y si se desea procesamiento de visión local o en la nube.
+          </p>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- ══ SECCIÓN 5: PANTALLAS Y FLUJO FUNCIONAL ══ -->
+    <article class="section" id="sec-pantallas">
+      <div class="section-header" onclick="toggleSection(this)">
+        <div class="section-num">5</div>
+        <span class="section-icon">📱</span>
+        <h2>Pantallas y Flujo Funcional</h2>
+        <span class="toggle-icon">▼</span>
+      </div>
+      <div class="section-body">
+
+        <h3>Catálogo de Pantallas del Sistema</h3>
+
+        <div class="screens-grid">
+
+          <div class="screen-card">
+            <div class="screen-card-header">
+              <span class="screen-icon">🔐</span>
+              <span class="screen-name">Login</span>
+              <span class="screen-role">Todos</span>
+            </div>
+            <div class="screen-card-body">
+              <div class="sc-label">Objetivo</div>
+              <div class="sc-value">Autenticar usuarios del sistema con email y contraseña</div>
+              <div class="sc-label">Acciones</div>
+              <div class="sc-value">Iniciar sesión, recuperar contraseña, ver estado del sistema</div>
+              <div class="sc-label">Lleva a</div>
+              <div class="sc-value">Dashboard (según rol), recuperación de contraseña</div>
+            </div>
+          </div>
+
+          <div class="screen-card">
+            <div class="screen-card-header">
+              <span class="screen-icon">📊</span>
+              <span class="screen-name">Dashboard Principal</span>
+              <span class="screen-role">Admin / Coord.</span>
+            </div>
+            <div class="screen-card-body">
+              <div class="sc-label">Objetivo</div>
+              <div class="sc-value">Vista global del estado del programa de reciclaje</div>
+              <div class="sc-label">Muestra</div>
+              <div class="sc-value">KPIs del periodo activo, ranking top 3, eventos recientes, estado de dispositivos, alertas</div>
+              <div class="sc-label">Lleva a</div>
+              <div class="sc-value">Rankings, historial, contenedores, reportes, incidencias</div>
+            </div>
+          </div>
+
+          <div class="screen-card">
+            <div class="screen-card-header">
+              <span class="screen-icon">🏆</span>
+              <span class="screen-name">Ranking General</span>
+              <span class="screen-role">Todos</span>
+            </div>
+            <div class="screen-card-body">
+              <div class="sc-label">Objetivo</div>
+              <div class="sc-value">Mostrar la clasificación de todos los salones por categoría</div>
+              <div class="sc-label">Muestra</div>
+              <div class="sc-value">Tabla de posiciones Cat. A y Cat. B, puntos, grado, salón, podio visual</div>
+              <div class="sc-label">Acciones</div>
+              <div class="sc-value">Filtrar por categoría, grado, periodo. Ver detalle de salón</div>
+            </div>
+          </div>
+
+          <div class="screen-card">
+            <div class="screen-card-header">
+              <span class="screen-icon">🏫</span>
+              <span class="screen-name">Detalle de Salón</span>
+              <span class="screen-role">Admin / Coord.</span>
+            </div>
+            <div class="screen-card-body">
+              <div class="sc-label">Objetivo</div>
+              <div class="sc-value">Ver el historial completo de depósitos y puntos de un salón específico</div>
+              <div class="sc-label">Muestra</div>
+              <div class="sc-value">Puntos acumulados, eventos por fecha, materiales reciclados, posición en ranking</div>
+              <div class="sc-label">Acciones</div>
+              <div class="sc-value">Filtrar por fecha, exportar, revisar eventos individuales</div>
+            </div>
+          </div>
+
+          <div class="screen-card">
+            <div class="screen-card-header">
+              <span class="screen-icon">♻️</span>
+              <span class="screen-name">Historial de Reciclaje</span>
+              <span class="screen-role">Admin / Coord.</span>
+            </div>
+            <div class="screen-card-body">
+              <div class="sc-label">Objetivo</div>
+              <div class="sc-value">Registro detallado de todos los eventos de reciclaje del sistema</div>
+              <div class="sc-label">Muestra</div>
+              <div class="sc-value">Fecha, hora, contenedor, material, puntos, salón, estado (válido / rechazado / en revisión)</div>
+              <div class="sc-label">Acciones</div>
+              <div class="sc-value">Filtrar, buscar, ver evidencia de cámara, marcar incidencia</div>
+            </div>
+          </div>
+
+          <div class="screen-card">
+            <div class="screen-card-header">
+              <span class="screen-icon">📡</span>
+              <span class="screen-name">Monitor de Contenedores</span>
+              <span class="screen-role">Admin / Técnico</span>
+            </div>
+            <div class="screen-card-body">
+              <div class="sc-label">Objetivo</div>
+              <div class="sc-value">Monitorear en tiempo real el estado de cada contenedor inteligente</div>
+              <div class="sc-label">Muestra</div>
+              <div class="sc-value">Lista de contenedores, estado online/offline, última conexión, alertas activas, eventos recientes</div>
+              <div class="sc-label">Acciones</div>
+              <div class="sc-value">Ver detalle, registrar mantenimiento, desactivar temporalmente</div>
+            </div>
+          </div>
+
+          <div class="screen-card">
+            <div class="screen-card-header">
+              <span class="screen-icon">⚙️</span>
+              <span class="screen-name">Gestión de Contenedores</span>
+              <span class="screen-role">Admin / Técnico</span>
+            </div>
+            <div class="screen-card-body">
+              <div class="sc-label">Objetivo</div>
+              <div class="sc-value">Registrar, editar y vincular contenedores inteligentes al sistema</div>
+              <div class="sc-label">Acciones</div>
+              <div class="sc-value">Crear contenedor, asignar a ubicación/salón, gestionar cámara y sensor, activar/desactivar</div>
+            </div>
+          </div>
+
+          <div class="screen-card">
+            <div class="screen-card-header">
+              <span class="screen-icon">📅</span>
+              <span class="screen-name">Periodos de Competencia</span>
+              <span class="screen-role">Admin</span>
+            </div>
+            <div class="screen-card-body">
+              <div class="sc-label">Objetivo</div>
+              <div class="sc-value">Crear, activar y cerrar periodos de competencia</div>
+              <div class="sc-label">Acciones</div>
+              <div class="sc-value">Definir fechas, activar periodo, cerrar, publicar ganadores, archivar</div>
+            </div>
+          </div>
+
+          <div class="screen-card">
+            <div class="screen-card-header">
+              <span class="screen-icon">🎓</span>
+              <span class="screen-name">Gestión de Grados y Salones</span>
+              <span class="screen-role">Admin</span>
+            </div>
+            <div class="screen-card-body">
+              <div class="sc-label">Objetivo</div>
+              <div class="sc-value">Administrar la estructura académica del colegio</div>
+              <div class="sc-label">Acciones</div>
+              <div class="sc-value">Crear grados, crear salones, asignar a categoría, activar/inactivar</div>
+            </div>
+          </div>
+
+          <div class="screen-card">
+            <div class="screen-card-header">
+              <span class="screen-icon">👤</span>
+              <span class="screen-name">Gestión de Usuarios</span>
+              <span class="screen-role">Admin</span>
+            </div>
+            <div class="screen-card-body">
+              <div class="sc-label">Objetivo</div>
+              <div class="sc-value">Administrar cuentas de usuario del panel</div>
+              <div class="sc-label">Acciones</div>
+              <div class="sc-value">Crear, editar, asignar rol, activar/desactivar, resetear contraseña</div>
+            </div>
+          </div>
+
+          <div class="screen-card">
+            <div class="screen-card-header">
+              <span class="screen-icon">📈</span>
+              <span class="screen-name">Reportes</span>
+              <span class="screen-role">Admin / Coord. / Visor</span>
+            </div>
+            <div class="screen-card-body">
+              <div class="sc-label">Objetivo</div>
+              <div class="sc-value">Generar y exportar informes del programa</div>
+              <div class="sc-label">Tipos</div>
+              <div class="sc-value">Participación por periodo, ranking histórico, actividad por grado, rendimiento de dispositivos</div>
+              <div class="sc-label">Exportar</div>
+              <div class="sc-value">PDF, CSV, Excel</div>
+            </div>
+          </div>
+
+          <div class="screen-card">
+            <div class="screen-card-header">
+              <span class="screen-icon">⚠️</span>
+              <span class="screen-name">Incidencias</span>
+              <span class="screen-role">Admin / Coord. / Técnico</span>
+            </div>
+            <div class="screen-card-body">
+              <div class="sc-label">Objetivo</div>
+              <div class="sc-value">Gestionar eventos rechazados, sospechosos o de hardware</div>
+              <div class="sc-label">Acciones</div>
+              <div class="sc-value">Revisar evento, validar manualmente, marcar como fraude, escalar, resolver</div>
+            </div>
+          </div>
+
+          <div class="screen-card">
+            <div class="screen-card-header">
+              <span class="screen-icon">🔩</span>
+              <span class="screen-name">Configuración del Sistema</span>
+              <span class="screen-role">Admin</span>
+            </div>
+            <div class="screen-card-body">
+              <div class="sc-label">Objetivo</div>
+              <div class="sc-value">Parámetros globales del sistema: materiales válidos, reglas de puntos, notificaciones</div>
+              <div class="sc-label">Acciones</div>
+              <div class="sc-value">Editar materiales reciclables, definir puntos por tipo, configurar alertas, ajustar umbrales</div>
+            </div>
+          </div>
+
+          <div class="screen-card">
+            <div class="screen-card-header">
+              <span class="screen-icon">📋</span>
+              <span class="screen-name">Auditoría y Logs</span>
+              <span class="screen-role">Admin</span>
+            </div>
+            <div class="screen-card-body">
+              <div class="sc-label">Objetivo</div>
+              <div class="sc-value">Trazabilidad completa de acciones del sistema</div>
+              <div class="sc-label">Muestra</div>
+              <div class="sc-value">Usuario, acción, entidad afectada, IP, timestamp, resultado</div>
+            </div>
+          </div>
+
+        </div>
+
+        <h3>Flujo Principal del Sistema — Paso a Paso</h3>
+
+        <div class="flow-steps">
+          <div class="flow-step">
+            <div class="flow-step-num">1</div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Configuración inicial del sistema</div>
+              <div class="flow-step-desc">El administrador registra la institución, crea los grados (1 al 11), organiza los salones por grado, los asigna a la categoría correspondiente y configura el primer periodo de competencia.</div>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-step-num">2</div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Registro y vinculación de contenedores inteligentes</div>
+              <div class="flow-step-desc">El técnico registra cada contenedor en el sistema con su identificador único, ubicación física dentro del colegio y lo vincula a un salón o zona. Activa la cámara y el sensor, verifica conectividad y confirma que el dispositivo transmite correctamente.</div>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-step-num">3</div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Detección de material por cámara</div>
+              <div class="flow-step-desc">Un estudiante lleva un objeto reciclable al contenedor. La cámara, mediante un modelo de visión artificial (TensorFlow Lite / OpenCV embebido o cloud), captura y clasifica el material: plástico, aluminio, cartón, vidrio, etc. Si el material no es reciclable válido, el evento se rechaza en esta etapa.</div>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-step-num">4</div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Confirmación del depósito por sensor</div>
+              <div class="flow-step-desc">Una vez que la cámara clasificó positivamente el material, el sensor de presencia o peso detecta que el objeto fue físicamente introducido en el contenedor. Solo si ambas señales se reciben en una ventana de tiempo configurable (ej: 10 segundos), el evento avanza como válido.</div>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-step-num">5</div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Transmisión del evento al backend</div>
+              <div class="flow-step-desc">El módulo de conectividad del contenedor envía al backend el payload del evento: ID del contenedor, tipo de material, timestamp de cámara, timestamp de sensor, imagen capturada (si aplica), estado de validación. El protocolo recomendado es MQTT para IoT o HTTP POST con retry para sistemas más simples.</div>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-step-num">6</div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Procesamiento y registro del evento</div>
+              <div class="flow-step-desc">El backend recibe el evento, verifica que el contenedor esté activo y vinculado a un salón en un periodo activo, consulta las reglas de puntuación para el tipo de material, crea el registro del evento en la base de datos con estado "válido" y calcula los puntos correspondientes.</div>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-step-num">7</div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Asignación automática de puntos al salón</div>
+              <div class="flow-step-desc">El sistema actualiza el registro de puntaje acumulado del salón vinculado al contenedor para el periodo activo. Si existe caché de ranking, se invalida y regenera. Los puntos son trazables: cada punto tiene origen en un evento específico con evidencia.</div>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-step-num">8</div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Actualización del ranking en tiempo real</div>
+              <div class="flow-step-desc">El ranking de cada categoría se actualiza en el dashboard. Si se usa WebSocket, los clientes conectados reciben la actualización automáticamente sin recargar. El salón ve subir su posición en el marcador.</div>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-step-num">9</div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Visualización en dashboards y reportes</div>
+              <div class="flow-step-desc">Administradores y coordinadores revisan el progreso en tiempo real. Los coordinadores descargan reportes para presentaciones pedagógicas. Los paneles públicos del colegio muestran el ranking actualizado.</div>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-step-num">10</div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Cierre de periodo y selección de ganadores</div>
+              <div class="flow-step-desc">Al finalizar el periodo, el administrador cierra la competencia. El sistema genera el ranking final por categoría. El administrador puede revisar y validar los resultados antes de publicarlos oficialmente. Se emite el reporte de ganadores y se archiva el historial completo del periodo.</div>
+            </div>
+          </div>
+        </div>
+
+        <h3>Flujos Alternos Importantes</h3>
+        <ul>
+          <li><strong>Objeto detectado pero no depositado:</strong> la cámara clasifica el material, pero el sensor no confirma el depósito en el tiempo configurado. El sistema registra el evento como "cancelado" sin asignar puntos. Se puede almacenar para análisis.</li>
+          <li><strong>Sensor activado sin clasificación válida:</strong> el sensor detecta movimiento/peso pero la cámara no reconoció un material válido. El evento se descarta y se registra como "rechazado por material no clasificable".</li>
+          <li><strong>Fallo de conectividad del dispositivo:</strong> si el contenedor pierde conexión, almacena los eventos localmente (si tiene capacidad de almacenamiento offline) y los sincroniza cuando se restablece la conexión. Se genera alerta al técnico.</li>
+          <li><strong>Evento duplicado:</strong> el sistema detecta eventos con el mismo contenedor en un intervalo de tiempo menor al umbral mínimo configurable (ej: 3 segundos). El segundo evento se descarta automáticamente como duplicado.</li>
+          <li><strong>Mantenimiento del contenedor:</strong> el técnico puede poner un contenedor en modo mantenimiento desde el panel, lo que suspende la recepción de eventos sin contar como falla hasta que sea reactivado.</li>
+        </ul>
+
+      </div>
+    </article>
+
+    <!-- ══ SECCIÓN 6: ARQUITECTURA ══ -->
+    <article class="section" id="sec-arquitectura">
+      <div class="section-header" onclick="toggleSection(this)">
+        <div class="section-num">6</div>
+        <span class="section-icon">🏗️</span>
+        <h2>Arquitectura Propuesta</h2>
+        <span class="toggle-icon">▼</span>
+      </div>
+      <div class="section-body">
+
+        <div class="highlight-box">
+          <p>
+            <strong>Decisión arquitectónica:</strong> se propone un <strong>Monolito Modular con Módulo de Ingestión IoT independiente</strong>. El núcleo del sistema (API, autenticación, lógica de negocio, base de datos) se construye como un monolito bien estructurado usando arquitectura hexagonal (puertos y adaptadores). El único componente desacoplado es el servicio de recepción de eventos IoT, ya que tiene requerimientos de disponibilidad y volumen diferentes al resto.
+          </p>
+        </div>
+
+        <h3>Justificación de la Arquitectura</h3>
+        <ul>
+          <li>El proyecto tiene un tamaño y complejidad que no justifica microservicios completos, los cuales añadirían overhead operativo innecesario para una institución escolar.</li>
+          <li>El módulo de ingestión de eventos IoT se separa porque debe ser altamente disponible, tolerante a fallos de red, y manejar reintentos de forma independiente al sistema web.</li>
+          <li>La arquitectura hexagonal permite reemplazar partes del sistema (base de datos, proveedor de almacenamiento, protocolo IoT) sin reescribir la lógica de negocio.</li>
+          <li>Un monolito modular es más fácil de mantener por equipos pequeños, más rápido de desplegar y más fácil de depurar.</li>
+        </ul>
+
+        <h3>Capas del Sistema</h3>
+
+        <div class="flow-steps">
+          <div class="flow-step">
+            <div class="flow-step-num">🌐</div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Capa de Presentación (Frontend Web)</div>
+              <div class="flow-step-desc">Aplicación React/Next.js que consume la API REST. Panel administrativo, dashboards, rankings, reportes. Se comunica con el backend vía HTTPS REST + WebSocket para actualizaciones en tiempo real del ranking.</div>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-step-num">⚙️</div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Capa de API (Backend Principal)</div>
+              <div class="flow-step-desc">FastAPI (Python) expone la API REST documentada con OpenAPI/Swagger. Gestiona autenticación JWT, lógica de negocio, CRUD de entidades, generación de rankings, reportes y auditoría. Arquitectura hexagonal interna: casos de uso desacoplados de la infraestructura.</div>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-step-num">📡</div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Servicio de Ingestión IoT</div>
+              <div class="flow-step-desc">Servicio independiente (Python + MQTT Broker o FastAPI con endpoint dedicado) que recibe los eventos de los contenedores inteligentes, los valida, los normaliza y los publica en una cola interna (Redis Streams o PostgreSQL LISTEN/NOTIFY) para que el backend principal los procese de forma asíncrona.</div>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-step-num">🗄️</div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Capa de Datos</div>
+              <div class="flow-step-desc">PostgreSQL como base de datos principal para todos los datos transaccionales. Redis para caché del ranking activo y sesiones de usuario. MinIO (compatible con S3) para almacenamiento de imágenes capturadas por los contenedores como evidencia.</div>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-step-num">🔌</div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Capa de Hardware (Contenedor Inteligente)</div>
+              <div class="flow-step-desc">Dispositivo embebido (Raspberry Pi 4 recomendado) con cámara (módulo Camera V2), sensor de presencia/peso, indicador LED, módulo Wi-Fi. Ejecuta el agente de captura local que clasifica imágenes con TensorFlow Lite y envía eventos al broker MQTT.</div>
+            </div>
+          </div>
+        </div>
+
+        <h3>Comunicación entre Componentes</h3>
+        <ul>
+          <li><strong>Frontend → Backend:</strong> HTTPS REST (CRUD) + WebSocket (actualizaciones de ranking en tiempo real)</li>
+          <li><strong>Contenedor → IoT Service:</strong> MQTT (protocolo liviano, estándar IoT) sobre TLS. Si el hardware no soporta MQTT, alternativa: HTTP POST con certificado de dispositivo</li>
+          <li><strong>IoT Service → Backend:</strong> Redis Streams (mensajería interna) o llamada directa a la lógica de dominio si están en el mismo proceso</li>
+          <li><strong>Backend → Base de datos:</strong> PostgreSQL vía SQLAlchemy (ORM con soporte async)</li>
+          <li><strong>Backend → Caché:</strong> Redis para ranking, sesiones y rate limiting</li>
+          <li><strong>Backend → Almacenamiento:</strong> MinIO S3 API para imágenes de evidencia</li>
+        </ul>
+
+      </div>
+    </article>
+
+    <!-- ══ SECCIÓN 7: STACK TECNOLÓGICO ══ -->
+    <article class="section" id="sec-stack">
+      <div class="section-header" onclick="toggleSection(this)">
+        <div class="section-num">7</div>
+        <span class="section-icon">💻</span>
+        <h2>Stack Tecnológico por Capa</h2>
+        <span class="toggle-icon">▼</span>
+      </div>
+      <div class="section-body">
+
+        <div class="stack-grid">
+
+          <div class="stack-card">
+            <div class="stack-layer">Frontend</div>
+            <div class="stack-tech">Next.js 14 + React</div>
+            <div class="stack-reason">SSR para la pantalla pública de ranking (SEO opcional), SPA para el panel administrativo. Ecosistema maduro, excelente DX, soporte TypeScript nativo.</div>
+          </div>
+
+          <div class="stack-card">
+            <div class="stack-layer">Estilos UI</div>
+            <div class="stack-tech">Tailwind CSS + shadcn/ui</div>
+            <div class="stack-reason">Desarrollo rápido, consistente y accesible. shadcn/ui provee componentes accesibles y personalizables sin dependencia de librería de terceros bloqueante.</div>
+          </div>
+
+          <div class="stack-card">
+            <div class="stack-layer">Estado / Fetch</div>
+            <div class="stack-tech">Zustand + React Query</div>
+            <div class="stack-reason">Zustand para estado global liviano. React Query para caché de datos del servidor, revalidación automática y sincronización optimista con el backend.</div>
+          </div>
+
+          <div class="stack-card">
+            <div class="stack-layer">Backend API</div>
+            <div class="stack-tech">FastAPI (Python 3.12)</div>
+            <div class="stack-reason">Alto rendimiento asíncrono (ASGI), documentación OpenAPI automática, validación con Pydantic, ideal para APIs REST y WebSocket. Productividad sobresaliente para equipos pequeños.</div>
+          </div>
+
+          <div class="stack-card">
+            <div class="stack-layer">IoT Ingestión</div>
+            <div class="stack-tech">MQTT Broker (Mosquitto)</div>
+            <div class="stack-reason">Protocolo estándar IoT de baja latencia y bajo consumo. Ideal para dispositivos embebidos con conectividad intermitente. El broker Mosquitto es ligero y de código abierto.</div>
+          </div>
+
+          <div class="stack-card">
+            <div class="stack-layer">Base de Datos</div>
+            <div class="stack-tech">PostgreSQL 16</div>
+            <div class="stack-reason">Robusto, ACID compliant, excelente para datos transaccionales complejos con relaciones. Soporta JSONB para campos flexibles, índices avanzados y extensiones como TimescaleDB si se necesita escalar métricas IoT.</div>
+          </div>
+
+          <div class="stack-card">
+            <div class="stack-layer">ORM</div>
+            <div class="stack-tech">SQLAlchemy 2.x (Async)</div>
+            <div class="stack-reason">ORM maduro con soporte async completo para FastAPI. Migraciones con Alembic. Evita SQL manual y reduce errores de seguridad (inyección SQL).</div>
+          </div>
+
+          <div class="stack-card">
+            <div class="stack-layer">Caché / Colas</div>
+            <div class="stack-tech">Redis 7</div>
+            <div class="stack-reason">Caché del ranking activo (evita recalcular en cada petición), sesiones de usuario, rate limiting de la API IoT, y Redis Streams para la cola de eventos entre el servicio IoT y el backend.</div>
+          </div>
+
+          <div class="stack-card">
+            <div class="stack-layer">Almacenamiento</div>
+            <div class="stack-tech">MinIO (S3 compatible)</div>
+            <div class="stack-reason">Almacenamiento de imágenes capturadas por la cámara como evidencia de cada depósito. Compatible con AWS S3, lo que permite migrar a la nube sin cambiar el código.</div>
+          </div>
+
+          <div class="stack-card">
+            <div class="stack-layer">Autenticación</div>
+            <div class="stack-tech">JWT + OAuth2 (FastAPI)</div>
+            <div class="stack-reason">JWT para sesiones stateless. Refresh tokens para sesiones largas. Bcrypt para hashing de contraseñas. Posibilidad de integrar SSO institucional (Google Workspace) en el futuro.</div>
+          </div>
+
+          <div class="stack-card">
+            <div class="stack-layer">Hardware IoT</div>
+            <div class="stack-tech">Raspberry Pi 4 + TFLite</div>
+            <div class="stack-reason">Potencia suficiente para visión artificial embebida con TensorFlow Lite. GPIO para sensor. Cámara V2 de alta calidad. Soporte Python nativo para el agente de captura.</div>
+          </div>
+
+          <div class="stack-card">
+            <div class="stack-layer">Contenedorización</div>
+            <div class="stack-tech">Docker + Docker Compose</div>
+            <div class="stack-reason">Aísla cada servicio (backend, IoT service, PostgreSQL, Redis, MinIO, Mosquitto) para despliegue reproducible en cualquier servidor o nube.</div>
+          </div>
+
+          <div class="stack-card">
+            <div class="stack-layer">Observabilidad</div>
+            <div class="stack-tech">Loguru + Sentry</div>
+            <div class="stack-reason">Loguru para logs estructurados en Python con niveles, contexto y exportación. Sentry para captura de errores en producción con trazas completas. Simple y efectivo para una institución educativa.</div>
+          </div>
+
+          <div class="stack-card">
+            <div class="stack-layer">Pruebas</div>
+            <div class="stack-tech">Pytest + Vitest</div>
+            <div class="stack-reason">Pytest para pruebas de backend (unitarias, integración, cobertura). Vitest para pruebas del frontend React. FastAPI incluye TestClient para pruebas de API sin levantar servidor.</div>
+          </div>
+
+          <div class="stack-card">
+            <div class="stack-layer">Despliegue CI/CD</div>
+            <div class="stack-tech">GitHub Actions + VPS</div>
+            <div class="stack-reason">Pipeline automatizado: lint → test → build → deploy. Compatible con servidor institucional propio (Ubuntu + Docker) o cualquier proveedor cloud (DigitalOcean, Hetzner, AWS, GCP).</div>
+          </div>
+
+        </div>
+
+        <div class="tag-row">
+          <span class="tag tag-green">Python 3.12</span>
+          <span class="tag tag-blue">TypeScript</span>
+          <span class="tag tag-green">FastAPI</span>
+          <span class="tag tag-blue">Next.js 14</span>
+          <span class="tag tag-teal">PostgreSQL 16</span>
+          <span class="tag tag-teal">Redis 7</span>
+          <span class="tag tag-amber">MQTT / Mosquitto</span>
+          <span class="tag tag-green">Docker</span>
+          <span class="tag tag-blue">Tailwind CSS</span>
+          <span class="tag tag-amber">Raspberry Pi 4</span>
+          <span class="tag tag-teal">TensorFlow Lite</span>
+          <span class="tag tag-green">MinIO</span>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- ══ SECCIÓN 8: MODELO DE DATOS ══ -->
+    <article class="section" id="sec-datos">
+      <div class="section-header" onclick="toggleSection(this)">
+        <div class="section-num">8</div>
+        <span class="section-icon">🗄️</span>
+        <h2>Modelo de Datos</h2>
+        <span class="toggle-icon">▼</span>
+      </div>
+      <div class="section-body">
+
+        <div class="info-box">
+          <p><strong>Base de datos:</strong> PostgreSQL 16 como única base de datos relacional. No se propone NoSQL para este proyecto ya que todos los datos tienen estructura fija y relaciones claras. Redis se usa únicamente para caché y colas, no como almacenamiento permanente.</p>
+        </div>
+
+        <!-- institucion -->
+        <div class="entity-card">
+          <div class="entity-header">
+            <span>🏛️</span>
+            <span class="entity-name">institucion</span>
+            <span class="entity-type">Principal</span>
+          </div>
+          <table class="entity-fields">
+            <thead><tr><th>Campo</th><th>Tipo</th><th>Etiqueta</th><th>Descripción</th></tr></thead>
+            <tbody>
+              <tr><td class="field-name">id</td><td class="field-type">UUID</td><td><span class="field-pk">PK</span></td><td>Identificador único</td></tr>
+              <tr><td class="field-name">nombre</td><td class="field-type">VARCHAR(200)</td><td></td><td>Nombre oficial del colegio</td></tr>
+              <tr><td class="field-name">codigo_dane</td><td class="field-type">VARCHAR(20)</td><td><span class="field-idx">IDX</span></td><td>Código DANE institucional (Colombia)</td></tr>
+              <tr><td class="field-name">direccion</td><td class="field-type">TEXT</td><td></td><td>Dirección física</td></tr>
+              <tr><td class="field-name">municipio</td><td class="field-type">VARCHAR(100)</td><td></td><td>Municipio o ciudad</td></tr>
+              <tr><td class="field-name">telefono</td><td class="field-type">VARCHAR(20)</td><td></td><td>Teléfono de contacto</td></tr>
+              <tr><td class="field-name">email_admin</td><td class="field-type">VARCHAR(150)</td><td></td><td>Correo del administrador principal</td></tr>
+              <tr><td class="field-name">logo_url</td><td class="field-type">VARCHAR(500)</td><td></td><td>URL del logo en MinIO</td></tr>
+              <tr><td class="field-name">activo</td><td class="field-type">BOOLEAN</td><td></td><td>Estado de la institución</td></tr>
+              <tr><td class="field-name">created_at</td><td class="field-type">TIMESTAMPTZ</td><td></td><td>Fecha de registro</td></tr>
+              <tr><td class="field-name">updated_at</td><td class="field-type">TIMESTAMPTZ</td><td></td><td>Última modificación</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- periodo_competencia -->
+        <div class="entity-card">
+          <div class="entity-header">
+            <span>📅</span>
+            <span class="entity-name">periodo_competencia</span>
+            <span class="entity-type">Gestión</span>
+          </div>
+          <table class="entity-fields">
+            <thead><tr><th>Campo</th><th>Tipo</th><th>Etiqueta</th><th>Descripción</th></tr></thead>
+            <tbody>
+              <tr><td class="field-name">id</td><td class="field-type">UUID</td><td><span class="field-pk">PK</span></td><td>Identificador único</td></tr>
+              <tr><td class="field-name">institucion_id</td><td class="field-type">UUID</td><td><span class="field-fk">FK</span></td><td>Institución propietaria</td></tr>
+              <tr><td class="field-name">nombre</td><td class="field-type">VARCHAR(150)</td><td></td><td>Ej: "Bimestre 1 - 2025"</td></tr>
+              <tr><td class="field-name">fecha_inicio</td><td class="field-type">DATE</td><td><span class="field-idx">IDX</span></td><td>Inicio del periodo de competencia</td></tr>
+              <tr><td class="field-name">fecha_fin</td><td class="field-type">DATE</td><td></td><td>Fin del periodo de competencia</td></tr>
+              <tr><td class="field-name">estado</td><td class="field-type">ENUM</td><td></td><td>planificado / activo / cerrado / archivado</td></tr>
+              <tr><td class="field-name">ganador_publicado</td><td class="field-type">BOOLEAN</td><td></td><td>Indica si el ganador fue publicado oficialmente</td></tr>
+              <tr><td class="field-name">created_by</td><td class="field-type">UUID</td><td><span class="field-fk">FK</span></td><td>Usuario que creó el periodo</td></tr>
+              <tr><td class="field-name">created_at</td><td class="field-type">TIMESTAMPTZ</td><td></td><td>Fecha de creación</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- salon -->
+        <div class="entity-card">
+          <div class="entity-header">
+            <span>🏫</span>
+            <span class="entity-name">salon</span>
+            <span class="entity-type">Core</span>
+          </div>
+          <table class="entity-fields">
+            <thead><tr><th>Campo</th><th>Tipo</th><th>Etiqueta</th><th>Descripción</th></tr></thead>
+            <tbody>
+              <tr><td class="field-name">id</td><td class="field-type">UUID</td><td><span class="field-pk">PK</span></td><td>Identificador único</td></tr>
+              <tr><td class="field-name">institucion_id</td><td class="field-type">UUID</td><td><span class="field-fk">FK</span></td><td>Institución a la que pertenece</td></tr>
+              <tr><td class="field-name">grado</td><td class="field-type">SMALLINT</td><td><span class="field-idx">IDX</span></td><td>Número de grado: 1 al 11</td></tr>
+              <tr><td class="field-name">nombre_salon</td><td class="field-type">VARCHAR(20)</td><td></td><td>Ej: "A", "B", "C", "Único"</td></tr>
+              <tr><td class="field-name">categoria</td><td class="field-type">ENUM</td><td><span class="field-idx">IDX</span></td><td>A (grados 1-5) / B (grados 6-11)</td></tr>
+              <tr><td class="field-name">num_estudiantes</td><td class="field-type">SMALLINT</td><td></td><td>Cantidad aproximada de estudiantes (opcional)</td></tr>
+              <tr><td class="field-name">docente_responsable</td><td class="field-type">VARCHAR(150)</td><td></td><td>Nombre del docente del salón</td></tr>
+              <tr><td class="field-name">activo</td><td class="field-type">BOOLEAN</td><td></td><td>Estado del salón</td></tr>
+              <tr><td class="field-name">created_at</td><td class="field-type">TIMESTAMPTZ</td><td></td><td>Fecha de registro</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- contenedor_inteligente -->
+        <div class="entity-card">
+          <div class="entity-header">
+            <span>🗑️</span>
+            <span class="entity-name">contenedor_inteligente</span>
+            <span class="entity-type">IoT / Hardware</span>
+          </div>
+          <table class="entity-fields">
+            <thead><tr><th>Campo</th><th>Tipo</th><th>Etiqueta</th><th>Descripción</th></tr></thead>
+            <tbody>
+              <tr><td class="field-name">id</td><td class="field-type">UUID</td><td><span class="field-pk">PK</span></td><td>Identificador único del sistema</td></tr>
+              <tr><td class="field-name">codigo_dispositivo</td><td class="field-type">VARCHAR(50)</td><td><span class="field-idx">UNIQUE</span></td><td>Código único físico del hardware (ej: ECO-001)</td></tr>
+              <tr><td class="field-name">institucion_id</td><td class="field-type">UUID</td><td><span class="field-fk">FK</span></td><td>Institución donde está instalado</td></tr>
+              <tr><td class="field-name">salon_id</td><td class="field-type">UUID</td><td><span class="field-fk">FK</span> <span class="field-idx">IDX</span></td><td>Salón al que se asignan los puntos</td></tr>
+              <tr><td class="field-name">ubicacion_descripcion</td><td class="field-type">TEXT</td><td></td><td>Descripción física: "Pasillo 2, junto al patio"</td></tr>
+              <tr><td class="field-name">modelo_hardware</td><td class="field-type">VARCHAR(100)</td><td></td><td>Ej: "Raspberry Pi 4B 4GB"</td></tr>
+              <tr><td class="field-name">firmware_version</td><td class="field-type">VARCHAR(20)</td><td></td><td>Versión del firmware instalado</td></tr>
+              <tr><td class="field-name">estado</td><td class="field-type">ENUM</td><td></td><td>activo / inactivo / mantenimiento / offline</td></tr>
+              <tr><td class="field-name">ultima_conexion</td><td class="field-type">TIMESTAMPTZ</td><td></td><td>Último heartbeat recibido</td></tr>
+              <tr><td class="field-name">api_key_hash</td><td class="field-type">VARCHAR(255)</td><td></td><td>Hash de la clave de autenticación del dispositivo</td></tr>
+              <tr><td class="field-name">created_at</td><td class="field-type">TIMESTAMPTZ</td><td></td><td>Fecha de registro</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- evento_reciclaje -->
+        <div class="entity-card">
+          <div class="entity-header">
+            <span>♻️</span>
+            <span class="entity-name">evento_reciclaje</span>
+            <span class="entity-type">Core / Transaccional</span>
+          </div>
+          <table class="entity-fields">
+            <thead><tr><th>Campo</th><th>Tipo</th><th>Etiqueta</th><th>Descripción</th></tr></thead>
+            <tbody>
+              <tr><td class="field-name">id</td><td class="field-type">UUID</td><td><span class="field-pk">PK</span></td><td>Identificador único del evento</td></tr>
+              <tr><td class="field-name">contenedor_id</td><td class="field-type">UUID</td><td><span class="field-fk">FK</span> <span class="field-idx">IDX</span></td><td>Contenedor que generó el evento</td></tr>
+              <tr><td class="field-name">salon_id</td><td class="field-type">UUID</td><td><span class="field-fk">FK</span> <span class="field-idx">IDX</span></td><td>Salón al que se acreditan los puntos (snapshot)</td></tr>
+              <tr><td class="field-name">periodo_id</td><td class="field-type">UUID</td><td><span class="field-fk">FK</span> <span class="field-idx">IDX</span></td><td>Periodo de competencia activo</td></tr>
+              <tr><td class="field-name">material_id</td><td class="field-type">UUID</td><td><span class="field-fk">FK</span></td><td>Tipo de material reciclable identificado</td></tr>
+              <tr><td class="field-name">timestamp_camara</td><td class="field-type">TIMESTAMPTZ</td><td><span class="field-idx">IDX</span></td><td>Momento de detección por cámara</td></tr>
+              <tr><td class="field-name">timestamp_sensor</td><td class="field-type">TIMESTAMPTZ</td><td></td><td>Momento de confirmación por sensor</td></tr>
+              <tr><td class="field-name">confianza_camara</td><td class="field-type">DECIMAL(5,2)</td><td></td><td>Score de confianza del modelo de visión (0-100%)</td></tr>
+              <tr><td class="field-name">puntos_asignados</td><td class="field-type">INTEGER</td><td></td><td>Puntos otorgados por este evento</td></tr>
+              <tr><td class="field-name">estado</td><td class="field-type">ENUM</td><td><span class="field-idx">IDX</span></td><td>valido / rechazado / en_revision / cancelado / duplicado</td></tr>
+              <tr><td class="field-name">motivo_rechazo</td><td class="field-type">TEXT</td><td></td><td>Razón si el evento fue rechazado o cancelado</td></tr>
+              <tr><td class="field-name">imagen_url</td><td class="field-type">VARCHAR(500)</td><td></td><td>URL de la evidencia en MinIO (opcional)</td></tr>
+              <tr><td class="field-name">revisado_por</td><td class="field-type">UUID</td><td><span class="field-fk">FK</span></td><td>Usuario que revisó manualmente (si aplica)</td></tr>
+              <tr><td class="field-name">created_at</td><td class="field-type">TIMESTAMPTZ</td><td></td><td>Timestamp de creación del registro</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- material_reciclable -->
+        <div class="entity-card">
+          <div class="entity-header">
+            <span>🔵</span>
+            <span class="entity-name">material_reciclable</span>
+            <span class="entity-type">Configuración</span>
+          </div>
+          <table class="entity-fields">
+            <thead><tr><th>Campo</th><th>Tipo</th><th>Etiqueta</th><th>Descripción</th></tr></thead>
+            <tbody>
+              <tr><td class="field-name">id</td><td class="field-type">UUID</td><td><span class="field-pk">PK</span></td><td>Identificador único</td></tr>
+              <tr><td class="field-name">nombre</td><td class="field-type">VARCHAR(100)</td><td></td><td>Ej: "Plástico PET", "Aluminio", "Cartón"</td></tr>
+              <tr><td class="field-name">codigo_modelo</td><td class="field-type">VARCHAR(50)</td><td></td><td>Clase del modelo TFLite (ej: "plastic_pet")</td></tr>
+              <tr><td class="field-name">puntos_base</td><td class="field-type">INTEGER</td><td></td><td>Puntos asignados por depósito válido de este material</td></tr>
+              <tr><td class="field-name">descripcion</td><td class="field-type">TEXT</td><td></td><td>Descripción pedagógica del material</td></tr>
+              <tr><td class="field-name">icono_url</td><td class="field-type">VARCHAR(500)</td><td></td><td>Ícono visual para el dashboard</td></tr>
+              <tr><td class="field-name">activo</td><td class="field-type">BOOLEAN</td><td></td><td>Si el material está habilitado en el sistema</td></tr>
+              <tr><td class="field-name">created_at</td><td class="field-type">TIMESTAMPTZ</td><td></td><td>Fecha de creación</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- puntaje_acumulado -->
+        <div class="entity-card">
+          <div class="entity-header">
+            <span>⭐</span>
+            <span class="entity-name">puntaje_acumulado</span>
+            <span class="entity-type">Agregado / Ranking</span>
+          </div>
+          <table class="entity-fields">
+            <thead><tr><th>Campo</th><th>Tipo</th><th>Etiqueta</th><th>Descripción</th></tr></thead>
+            <tbody>
+              <tr><td class="field-name">id</td><td class="field-type">UUID</td><td><span class="field-pk">PK</span></td><td>Identificador único</td></tr>
+              <tr><td class="field-name">salon_id</td><td class="field-type">UUID</td><td><span class="field-fk">FK</span> <span class="field-idx">IDX</span></td><td>Salón acreditado</td></tr>
+              <tr><td class="field-name">periodo_id</td><td class="field-type">UUID</td><td><span class="field-fk">FK</span> <span class="field-idx">IDX</span></td><td>Periodo de competencia</td></tr>
+              <tr><td class="field-name">total_puntos</td><td class="field-type">INTEGER</td><td></td><td>Puntos acumulados válidos</td></tr>
+              <tr><td class="field-name">total_eventos</td><td class="field-type">INTEGER</td><td></td><td>Número de depósitos válidos</td></tr>
+              <tr><td class="field-name">posicion_categoria</td><td class="field-type">SMALLINT</td><td></td><td>Posición en el ranking de su categoría (calculado)</td></tr>
+              <tr><td class="field-name">updated_at</td><td class="field-type">TIMESTAMPTZ</td><td></td><td>Última actualización del puntaje</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- usuario y log_auditoria -->
+        <div class="entity-card">
+          <div class="entity-header">
+            <span>📋</span>
+            <span class="entity-name">log_auditoria</span>
+            <span class="entity-type">Seguridad / Trazabilidad</span>
+          </div>
+          <table class="entity-fields">
+            <thead><tr><th>Campo</th><th>Tipo</th><th>Etiqueta</th><th>Descripción</th></tr></thead>
+            <tbody>
+              <tr><td class="field-name">id</td><td class="field-type">BIGSERIAL</td><td><span class="field-pk">PK</span></td><td>ID secuencial</td></tr>
+              <tr><td class="field-name">usuario_id</td><td class="field-type">UUID</td><td><span class="field-fk">FK</span> <span class="field-idx">IDX</span></td><td>Usuario que realizó la acción</td></tr>
+              <tr><td class="field-name">accion</td><td class="field-type">VARCHAR(100)</td><td></td><td>Ej: "CIERRE_PERIODO", "CAMBIO_REGLA_PUNTOS"</td></tr>
+              <tr><td class="field-name">entidad</td><td class="field-type">VARCHAR(50)</td><td></td><td>Tabla o entidad afectada</td></tr>
+              <tr><td class="field-name">entidad_id</td><td class="field-type">VARCHAR(100)</td><td></td><td>ID del registro afectado</td></tr>
+              <tr><td class="field-name">datos_anteriores</td><td class="field-type">JSONB</td><td></td><td>Estado antes del cambio</td></tr>
+              <tr><td class="field-name">datos_nuevos</td><td class="field-type">JSONB</td><td></td><td>Estado después del cambio</td></tr>
+              <tr><td class="field-name">ip_address</td><td class="field-type">INET</td><td></td><td>IP del cliente</td></tr>
+              <tr><td class="field-name">user_agent</td><td class="field-type">TEXT</td><td></td><td>Agente de usuario</td></tr>
+              <tr><td class="field-name">created_at</td><td class="field-type">TIMESTAMPTZ</td><td><span class="field-idx">IDX</span></td><td>Timestamp del evento de auditoría</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- ══ SECCIÓN 9: FUNCIONALIDADES ══ -->
+    <article class="section" id="sec-funcionalidades">
+      <div class="section-header" onclick="toggleSection(this)">
+        <div class="section-num">9</div>
+        <span class="section-icon">⚡</span>
+        <h2>Funcionalidades del Sistema</h2>
+        <span class="toggle-icon">▼</span>
+      </div>
+      <div class="section-body">
+
+        <h3>Funcionalidades Esenciales (MVP)</h3>
+        <div class="feat-grid">
+          <div class="feat-item"><span class="feat-icon">🔐</span> Autenticación y autorización con JWT por roles</div>
+          <div class="feat-item"><span class="feat-icon">🏫</span> CRUD de grados y salones con asignación de categoría</div>
+          <div class="feat-item"><span class="feat-icon">📅</span> Gestión de periodos de competencia (crear, activar, cerrar)</div>
+          <div class="feat-item"><span class="feat-icon">🗑️</span> Registro y vinculación de contenedores inteligentes</div>
+          <div class="feat-item"><span class="feat-icon">📡</span> Recepción de eventos IoT (MQTT/HTTP) desde contenedores</div>
+          <div class="feat-item"><span class="feat-icon">✅</span> Validación doble: cámara + sensor en ventana de tiempo</div>
+          <div class="feat-item"><span class="feat-icon">⭐</span> Asignación automática de puntos por evento válido</div>
+          <div class="feat-item"><span class="feat-icon">🏆</span> Ranking en tiempo real por categoría A y B</div>
+          <div class="feat-item"><span class="feat-icon">📊</span> Dashboard con KPIs del periodo activo</div>
+          <div class="feat-item"><span class="feat-icon">♻️</span> Historial de eventos de reciclaje con filtros</div>
+          <div class="feat-item"><span class="feat-icon">⚠️</span> Gestión de incidencias y eventos rechazados</div>
+          <div class="feat-item"><span class="feat-icon">📋</span> Auditoría completa de acciones administrativas</div>
+        </div>
+
+        <h3>Funcionalidades Secundarias</h3>
+        <div class="feat-grid">
+          <div class="feat-item"><span class="feat-icon">📈</span> Reportes exportables en PDF y CSV</div>
+          <div class="feat-item"><span class="feat-icon">🔧</span> Panel de monitoreo de estado de dispositivos IoT</div>
+          <div class="feat-item"><span class="feat-icon">🔔</span> Alertas de dispositivo offline o fallo de hardware</div>
+          <div class="feat-item"><span class="feat-icon">🖼️</span> Almacenamiento de imágenes de evidencia por evento</div>
+          <div class="feat-item"><span class="feat-icon">🛠️</span> Registro de mantenimientos de contenedores</div>
+          <div class="feat-item"><span class="feat-icon">🎯</span> Configuración de materiales reciclables y sus puntos</div>
+          <div class="feat-item"><span class="feat-icon">🌐</span> Pantalla pública de ranking para kioscos del colegio</div>
+          <div class="feat-item"><span class="feat-icon">🔍</span> Búsqueda y filtros avanzados en historial</div>
+          <div class="feat-item"><span class="feat-icon">📱</span> Diseño completamente responsive para móvil</div>
+          <div class="feat-item"><span class="feat-icon">🏅</span> Publicación oficial de ganadores al cierre de periodo</div>
+        </div>
+
+        <h3>Funcionalidades Futuras o Deseables</h3>
+        <div class="feat-grid">
+          <div class="feat-item"><span class="feat-icon">📲</span> App móvil nativa para coordinadores y estudiantes</div>
+          <div class="feat-item"><span class="feat-icon">🎮</span> Gamificación extendida: insignias, rachas, medallas</div>
+          <div class="feat-item"><span class="feat-icon">🏢</span> Multi-institución: gestión de varias escuelas</div>
+          <div class="feat-item"><span class="feat-icon">🤖</span> Mejora del modelo de visión con datos reales</div>
+          <div class="feat-item"><span class="feat-icon">🔗</span> Integración con SSO institucional (Google Workspace)</div>
+          <div class="feat-item"><span class="feat-icon">📧</span> Notificaciones por email o WhatsApp al coordinador</div>
+          <div class="feat-item"><span class="feat-icon">📊</span> Análisis predictivo de participación</div>
+          <div class="feat-item"><span class="feat-icon">🌍</span> Reporte de impacto ambiental: CO₂ ahorrado estimado</div>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- ══ SECCIÓN 10: NFR ══ -->
+    <article class="section" id="sec-nfr">
+      <div class="section-header" onclick="toggleSection(this)">
+        <div class="section-num">10</div>
+        <span class="section-icon">🔒</span>
+        <h2>Requisitos No Funcionales</h2>
+        <span class="toggle-icon">▼</span>
+      </div>
+      <div class="section-body">
+
+        <h3>Seguridad</h3>
+        <ul>
+          <li>Autenticación con JWT (access token 15 min + refresh token 7 días)</li>
+          <li>Contraseñas cifradas con bcrypt (cost factor ≥ 12)</li>
+          <li>API IoT autenticada con device API key hasheada</li>
+          <li>HTTPS obligatorio en todos los endpoints</li>
+          <li>Protección contra: SQL Injection (ORM), XSS (sanitización en frontend), CSRF (SameSite cookies), brute force (rate limiting en login)</li>
+          <li>Principio de mínimo privilegio estricto por rol</li>
+          <li>Auditoría de todas las acciones sensibles</li>
+          <li>Variables de entorno para todos los secretos (nunca hardcodeados)</li>
+        </ul>
+
+        <h3>Rendimiento</h3>
+        <ul>
+          <li>Tiempo de respuesta API &lt; 200 ms en el 95% de las peticiones bajo carga normal</li>
+          <li>Ranking cacheado en Redis, recalculado solo al registrar nuevos eventos</li>
+          <li>Índices en campos de búsqueda frecuente: salon_id, periodo_id, estado, timestamp</li>
+          <li>Paginación obligatoria en todos los listados</li>
+          <li>Imágenes de evidencia almacenadas en MinIO, nunca en base de datos</li>
+        </ul>
+
+        <h3>Escalabilidad</h3>
+        <ul>
+          <li>Arquitectura containerizada lista para escalar horizontalmente</li>
+          <li>Diseño preparado para multi-institución sin cambio de arquitectura</li>
+          <li>El servicio IoT puede escalar independientemente del backend web</li>
+          <li>PostgreSQL soporta particionamiento de tabla evento_reciclaje por fecha si el volumen lo requiere</li>
+        </ul>
+
+        <h3>Disponibilidad y Tolerancia a Fallos</h3>
+        <ul>
+          <li>Disponibilidad objetivo: 99.5% (excluye mantenimientos programados)</li>
+          <li>Los contenedores almacenan eventos localmente si pierden conexión y los sincronizan al reconectarse</li>
+          <li>El sistema detecta dispositivos offline mediante heartbeat (ping cada 60 segundos)</li>
+          <li>Manejo robusto de eventos duplicados: idempotencia por ID de evento de hardware</li>
+          <li>Backup automático diario de la base de datos PostgreSQL</li>
+        </ul>
+
+        <h3>Mantenibilidad y Trazabilidad</h3>
+        <ul>
+          <li>Cobertura de pruebas &gt; 80% en lógica de negocio crítica</li>
+          <li>Logs estructurados con nivel, timestamp, módulo y contexto de request</li>
+          <li>Documentación API autogenerada con OpenAPI/Swagger disponible en /docs</li>
+          <li>Código organizado por módulos de dominio (no por tipo de archivo)</li>
+          <li>Migrations versionadas con Alembic para control de esquema de base de datos</li>
+        </ul>
+
+      </div>
+    </article>
+
+    <!-- ══ SECCIÓN 11: ESTRUCTURA DE CARPETAS ══ -->
+    <article class="section" id="sec-carpetas">
+      <div class="section-header" onclick="toggleSection(this)">
+        <div class="section-num">11</div>
+        <span class="section-icon">📁</span>
+        <h2>Estructura de Carpetas del Proyecto</h2>
+        <span class="toggle-icon">▼</span>
+      </div>
+      <div class="section-body">
+
+        <div class="folder-tree">
+<span class="dir">ecoranking/</span>
+├── <span class="dir">backend/</span>                     <span class="comment"># FastAPI — Backend principal</span>
+│   ├── <span class="dir">app/</span>
+│   │   ├── <span class="dir">api/</span>               <span class="comment"># Routers por dominio</span>
+│   │   │   ├── <span class="file">auth.py</span>
+│   │   │   ├── <span class="file">salones.py</span>
+│   │   │   ├── <span class="file">contenedores.py</span>
+│   │   │   ├── <span class="file">eventos.py</span>
+│   │   │   ├── <span class="file">rankings.py</span>
+│   │   │   ├── <span class="file">reportes.py</span>
+│   │   │   ├── <span class="file">periodos.py</span>
+│   │   │   ├── <span class="file">usuarios.py</span>
+│   │   │   └── <span class="file">incidencias.py</span>
+│   │   ├── <span class="dir">core/</span>              <span class="comment"># Configuración central</span>
+│   │   │   ├── <span class="file">config.py</span>
+│   │   │   ├── <span class="file">security.py</span>
+│   │   │   ├── <span class="file">database.py</span>
+│   │   │   └── <span class="file">redis.py</span>
+│   │   ├── <span class="dir">domain/</span>            <span class="comment"># Lógica de negocio pura</span>
+│   │   │   ├── <span class="dir">eventos/</span>
+│   │   │   │   ├── <span class="file">service.py</span>
+│   │   │   │   ├── <span class="file">validator.py</span>
+│   │   │   │   └── <span class="file">schemas.py</span>
+│   │   │   ├── <span class="dir">ranking/</span>
+│   │   │   │   ├── <span class="file">service.py</span>
+│   │   │   │   └── <span class="file">calculator.py</span>
+│   │   │   ├── <span class="dir">puntos/</span>
+│   │   │   │   └── <span class="file">service.py</span>
+│   │   │   └── <span class="dir">reportes/</span>
+│   │   │       ├── <span class="file">generator.py</span>
+│   │   │       └── <span class="file">schemas.py</span>
+│   │   ├── <span class="dir">models/</span>            <span class="comment"># Modelos SQLAlchemy</span>
+│   │   │   ├── <span class="file">institucion.py</span>
+│   │   │   ├── <span class="file">salon.py</span>
+│   │   │   ├── <span class="file">contenedor.py</span>
+│   │   │   ├── <span class="file">evento.py</span>
+│   │   │   ├── <span class="file">puntaje.py</span>
+│   │   │   ├── <span class="file">usuario.py</span>
+│   │   │   ├── <span class="file">periodo.py</span>
+│   │   │   └── <span class="file">material.py</span>
+│   │   ├── <span class="dir">schemas/</span>           <span class="comment"># Pydantic schemas (DTOs)</span>
+│   │   └── <span class="file">main.py</span>
+│   ├── <span class="dir">migrations/</span>            <span class="comment"># Alembic — Migraciones DB</span>
+│   │   └── <span class="dir">versions/</span>
+│   ├── <span class="dir">tests/</span>                 <span class="comment"># Pytest</span>
+│   │   ├── <span class="file">test_eventos.py</span>
+│   │   ├── <span class="file">test_ranking.py</span>
+│   │   └── <span class="file">test_auth.py</span>
+│   ├── <span class="file">requirements.txt</span>
+│   ├── <span class="file">alembic.ini</span>
+│   └── <span class="file">Dockerfile</span>
+│
+├── <span class="dir">iot-service/</span>              <span class="comment"># Servicio de ingestión IoT</span>
+│   ├── <span class="dir">app/</span>
+│   │   ├── <span class="file">mqtt_client.py</span>    <span class="comment"># Suscriptor MQTT Mosquitto</span>
+│   │   ├── <span class="file">event_processor.py</span>
+│   │   ├── <span class="file">device_auth.py</span>
+│   │   └── <span class="file">redis_publisher.py</span>
+│   ├── <span class="file">requirements.txt</span>
+│   └── <span class="file">Dockerfile</span>
+│
+├── <span class="dir">frontend/</span>                 <span class="comment"># Next.js 14 — Aplicación web</span>
+│   ├── <span class="dir">app/</span>                   <span class="comment"># App Router de Next.js</span>
+│   │   ├── <span class="dir">(auth)/</span>            <span class="comment"># Rutas públicas</span>
+│   │   │   └── <span class="dir">login/</span>
+│   │   ├── <span class="dir">(dashboard)/</span>       <span class="comment"># Rutas protegidas</span>
+│   │   │   ├── <span class="dir">dashboard/</span>
+│   │   │   ├── <span class="dir">rankings/</span>
+│   │   │   ├── <span class="dir">salones/</span>
+│   │   │   ├── <span class="dir">contenedores/</span>
+│   │   │   ├── <span class="dir">reportes/</span>
+│   │   │   ├── <span class="dir">incidencias/</span>
+│   │   │   └── <span class="dir">configuracion/</span>
+│   │   └── <span class="dir">publico/</span>           <span class="comment"># Pantalla pública de ranking</span>
+│   ├── <span class="dir">components/</span>
+│   │   ├── <span class="dir">ui/</span>                <span class="comment"># shadcn/ui components</span>
+│   │   ├── <span class="dir">ranking/</span>
+│   │   ├── <span class="dir">dashboard/</span>
+│   │   └── <span class="dir">contenedores/</span>
+│   ├── <span class="dir">lib/</span>                   <span class="comment"># Utilidades y API client</span>
+│   │   ├── <span class="file">api.ts</span>
+│   │   ├── <span class="file">auth.ts</span>
+│   │   └── <span class="file">utils.ts</span>
+│   ├── <span class="dir">stores/</span>                <span class="comment"># Zustand stores</span>
+│   ├── <span class="file">package.json</span>
+│   ├── <span class="file">tailwind.config.ts</span>
+│   └── <span class="file">Dockerfile</span>
+│
+├── <span class="dir">device-agent/</span>             <span class="comment"># Raspberry Pi — Agente IoT</span>
+│   ├── <span class="file">main.py</span>               <span class="comment"># Loop principal del dispositivo</span>
+│   ├── <span class="file">camera.py</span>             <span class="comment"># Captura y clasificación TFLite</span>
+│   ├── <span class="file">sensor.py</span>             <span class="comment"># Lectura del sensor GPIO</span>
+│   ├── <span class="file">mqtt_publisher.py</span>     <span class="comment"># Publicación de eventos MQTT</span>
+│   ├── <span class="file">offline_queue.py</span>      <span class="comment"># Cola local para eventos sin conexión</span>
+│   ├── <span class="file">led_feedback.py</span>       <span class="comment"># Feedback visual LED al estudiante</span>
+│   ├── <span class="dir">models/</span>               <span class="comment"># Modelos TFLite de clasificación</span>
+│   └── <span class="file">requirements.txt</span>
+│
+├── <span class="dir">infra/</span>                    <span class="comment"># Infraestructura y despliegue</span>
+│   ├── <span class="file">docker-compose.yml</span>    <span class="comment"># Orquestación completa local</span>
+│   ├── <span class="file">docker-compose.prod.yml</span>
+│   ├── <span class="dir">nginx/</span>                <span class="comment"># Reverse proxy</span>
+│   │   └── <span class="file">nginx.conf</span>
+│   └── <span class="dir">scripts/</span>
+│       ├── <span class="file">seed.py</span>           <span class="comment"># Datos semilla iniciales</span>
+│       └── <span class="file">backup.sh</span>         <span class="comment"># Script de respaldo</span>
+│
+├── <span class="dir">docs/</span>                     <span class="comment"># Documentación del proyecto</span>
+│   ├── <span class="file">arquitectura.md</span>
+│   ├── <span class="file">api-endpoints.md</span>
+│   ├── <span class="file">modelo-datos.md</span>
+│   ├── <span class="file">guia-hardware.md</span>
+│   └── <span class="file">manual-usuario.md</span>
+│
+├── <span class="file">.env.example</span>             <span class="comment"># Variables de entorno de ejemplo</span>
+├── <span class="file">.gitignore</span>
+└── <span class="file">README.md</span>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- ══ SECCIÓN 12: ENDPOINTS ══ -->
+    <article class="section" id="sec-endpoints">
+      <div class="section-header" onclick="toggleSection(this)">
+        <div class="section-num">12</div>
+        <span class="section-icon">🔌</span>
+        <h2>Endpoints y Módulos Principales de la API</h2>
+        <span class="toggle-icon">▼</span>
+      </div>
+      <div class="section-body">
+
+        <div class="endpoint-group">
+          <div class="endpoint-group-title">🔐 Autenticación</div>
+          <div class="endpoint-item">
+            <span class="method-badge method-post">POST</span>
+            <div>
+              <div class="endpoint-path">/api/v1/auth/login</div>
+              <div style="font-size:0.82rem;color:#6b7280;">Autenticación con email/contraseña → JWT tokens</div>
+            </div>
+          </div>
+          <div class="endpoint-item">
+            <span class="method-badge method-post">POST</span>
+            <div>
+              <div class="endpoint-path">/api/v1/auth/refresh</div>
+              <div style="font-size:0.82rem;color:#6b7280;">Renovar access token usando refresh token</div>
+            </div>
+          </div>
+          <div class="endpoint-item">
+            <span class="method-badge method-post">POST</span>
+            <div>
+              <div class="endpoint-path">/api/v1/auth/logout</div>
+              <div style="font-size:0.82rem;color:#6b7280;">Invalidar sesión activa</div>
+            </div>
+          </div>
+          <div class="endpoint-item">
+            <span class="method-badge method-post">POST</span>
+            <div>
+              <div class="endpoint-path">/api/v1/auth/password-reset</div>
+              <div style="font-size:0.82rem;color:#6b7280;">Solicitar recuperación de contraseña</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="endpoint-group">
+          <div class="endpoint-group-title">🏫 Salones y Grados</div>
+          <div class="endpoint-item">
+            <span class="method-badge method-get">GET</span>
+            <div><div class="endpoint-path">/api/v1/salones</div><div style="font-size:0.82rem;color:#6b7280;">Listar salones con filtros de grado y categoría</div></div>
+          </div>
+          <div class="endpoint-item">
+            <span class="method-badge method-post">POST</span>
+            <div><div class="endpoint-path">/api/v1/salones</div><div style="font-size:0.82rem;color:#6b7280;">Crear nuevo salón</div></div>
+          </div>
+          <div class="endpoint-item">
+            <span class="method-badge method-get">GET</span>
+            <div><div class="endpoint-path">/api/v1/salones/{id}</div><div style="font-size:0.82rem;color:#6b7280;">Detalle del salón con puntaje actual</div></div>
+          </div>
+          <div class="endpoint-item">
+            <span class="method-badge method-put">PUT</span>
+            <div><div class="endpoint-path">/api/v1/salones/{id}</div><div style="font-size:0.82rem;color:#6b7280;">Actualizar información del salón</div></div>
+          </div>
+          <div class="endpoint-item">
+            <span class="method-badge method-delete">DEL</span>
+            <div><div class="endpoint-path">/api/v1/salones/{id}</div><div style="font-size:0.82rem;color:#6b7280;">Desactivar salón (soft delete)</div></div>
+          </div>
+        </div>
+
+        <div class="endpoint-group">
+          <div class="endpoint-group-title">🗑️ Contenedores Inteligentes</div>
+          <div class="endpoint-item">
+            <span class="method-badge method-get">GET</span>
+            <div><div class="endpoint-path">/api/v1/contenedores</div><div style="font-size:0.82rem;color:#6b7280;">Listar contenedores con estado de conectividad</div></div>
+          </div>
+          <div class="endpoint-item">
+            <span class="method-badge method-post">POST</span>
+            <div><div class="endpoint-path">/api/v1/contenedores</div><div style="font-size:0.82rem;color:#6b7280;">Registrar nuevo contenedor y generar API key</div></div>
+          </div>
+          <div class="endpoint-item">
+            <span class="method-badge method-get">GET</span>
+            <div><div class="endpoint-path">/api/v1/contenedores/{id}/status</div><div style="font-size:0.82rem;color:#6b7280;">Estado en tiempo real del dispositivo</div></div>
+          </div>
+          <div class="endpoint-item">
+            <span class="method-badge method-post">POST</span>
+            <div><div class="endpoint-path">/api/v1/contenedores/{id}/mantenimiento</div><div style="font-size:0.82rem;color:#6b7280;">Registrar inicio/fin de mantenimiento</div></div>
+          </div>
+          <div class="endpoint-item">
+            <span class="method-badge method-post">POST</span>
+            <div><div class="endpoint-path">/api/v1/contenedores/{id}/heartbeat</div><div style="font-size:0.82rem;color:#6b7280;">Ping del dispositivo para confirmar conectividad</div></div>
+          </div>
+        </div>
+
+        <div class="endpoint-group">
+          <div class="endpoint-group-title">♻️ Eventos de Reciclaje (IoT)</div>
+          <div class="endpoint-item">
+            <span class="method-badge method-post">POST</span>
+            <div><div class="endpoint-path">/api/v1/eventos/ingest</div><div style="font-size:0.82rem;color:#6b7280;">Recibir evento de reciclaje del contenedor (autenticado con device key)</div></div>
+          </div>
+          <div class="endpoint-item">
+            <span class="method-badge method-get">GET</span>
+            <div><div class="endpoint-path">/api/v1/eventos</div><div style="font-size:0.82rem;color:#6b7280;">Listar eventos con filtros (fecha, estado, salón, contenedor)</div></div>
+          </div>
+          <div class="endpoint-item">
+            <span class="method-badge method-get">GET</span>
+            <div><div class="endpoint-path">/api/v1/eventos/{id}</div><div style="font-size:0.82rem;color:#6b7280;">Detalle completo del evento con evidencia</div></div>
+          </div>
+          <div class="endpoint-item">
+            <span class="method-badge method-patch">PATCH</span>
+            <div><div class="endpoint-path">/api/v1/eventos/{id}/revision</div><div style="font-size:0.82rem;color:#6b7280;">Marcar evento para revisión manual o resolver incidencia</div></div>
+          </div>
+        </div>
+
+        <div class="endpoint-group">
+          <div class="endpoint-group-title">🏆 Rankings</div>
+          <div class="endpoint-item">
+            <span class="method-badge method-get">GET</span>
+            <div><div class="endpoint-path">/api/v1/rankings/activo</div><div style="font-size:0.82rem;color:#6b7280;">Ranking del periodo activo por categorías A y B</div></div>
+          </div>
+          <div class="endpoint-item">
+            <span class="method-badge method-get">GET</span>
+            <div><div class="endpoint-path">/api/v1/rankings/{periodo_id}</div><div style="font-size:0.82rem;color:#6b7280;">Ranking histórico de un periodo específico</div></div>
+          </div>
+          <div class="endpoint-item">
+            <span class="method-badge method-ws">WS</span>
+            <div><div class="endpoint-path">/ws/ranking-live</div><div style="font-size:0.82rem;color:#6b7280;">WebSocket para actualización en tiempo real del ranking</div></div>
+          </div>
+        </div>
+
+        <div class="endpoint-group">
+          <div class="endpoint-group-title">📅 Periodos de Competencia</div>
+          <div class="endpoint-item">
+            <span class="method-badge method-get">GET</span>
+            <div><div class="endpoint-path">/api/v1/periodos</div><div style="font-size:0.82rem;color:#6b7280;">Listar todos los periodos</div></div>
+          </div>
+          <div class="endpoint-item">
+            <span class="method-badge method-post">POST</span>
+            <div><div class="endpoint-path">/api/v1/periodos</div><div style="font-size:0.82rem;color:#6b7280;">Crear nuevo periodo de competencia</div></div>
+          </div>
+          <div class="endpoint-item">
+            <span class="method-badge method-post">POST</span>
+            <div><div class="endpoint-path">/api/v1/periodos/{id}/activar</div><div style="font-size:0.82rem;color:#6b7280;">Activar periodo (solo uno activo a la vez)</div></div>
+          </div>
+          <div class="endpoint-item">
+            <span class="method-badge method-post">POST</span>
+            <div><div class="endpoint-path">/api/v1/periodos/{id}/cerrar</div><div style="font-size:0.82rem;color:#6b7280;">Cerrar periodo y calcular ranking final</div></div>
+          </div>
+          <div class="endpoint-item">
+            <span class="method-badge method-post">POST</span>
+            <div><div class="endpoint-path">/api/v1/periodos/{id}/publicar-ganadores</div><div style="font-size:0.82rem;color:#6b7280;">Publicar ganadores oficiales del periodo</div></div>
+          </div>
+        </div>
+
+        <div class="endpoint-group">
+          <div class="endpoint-group-title">📈 Reportes y Dashboard</div>
+          <div class="endpoint-item">
+            <span class="method-badge method-get">GET</span>
+            <div><div class="endpoint-path">/api/v1/dashboard/kpis</div><div style="font-size:0.82rem;color:#6b7280;">KPIs del periodo activo para el dashboard</div></div>
+          </div>
+          <div class="endpoint-item">
+            <span class="method-badge method-get">GET</span>
+            <div><div class="endpoint-path">/api/v1/reportes/participacion</div><div style="font-size:0.82rem;color:#6b7280;">Reporte de participación por grado y salón</div></div>
+          </div>
+          <div class="endpoint-item">
+            <span class="method-badge method-get">GET</span>
+            <div><div class="endpoint-path">/api/v1/reportes/export/pdf</div><div style="font-size:0.82rem;color:#6b7280;">Exportar reporte completo en PDF</div></div>
+          </div>
+          <div class="endpoint-item">
+            <span class="method-badge method-get">GET</span>
+            <div><div class="endpoint-path">/api/v1/reportes/export/csv</div><div style="font-size:0.82rem;color:#6b7280;">Exportar datos en CSV para análisis externo</div></div>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <p><strong>Documentación interactiva:</strong> todos los endpoints están documentados automáticamente por FastAPI y disponibles en <code style="font-family:monospace;background:#e0f2fe;padding:2px 6px;border-radius:4px;">/docs</code> (Swagger UI) y <code style="font-family:monospace;background:#e0f2fe;padding:2px 6px;border-radius:4px;">/redoc</code> (ReDoc). Los modelos de request/response con validación Pydantic se muestran completos.</p>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- ══ SECCIÓN 13: PLAN DE IMPLEMENTACIÓN ══ -->
+    <article class="section" id="sec-plan">
+      <div class="section-header" onclick="toggleSection(this)">
+        <div class="section-num">13</div>
+        <span class="section-icon">🗓️</span>
+        <h2>Plan de Implementación</h2>
+        <span class="toggle-icon">▼</span>
+      </div>
+      <div class="section-body">
+
+        <div class="phase-card">
+          <div class="phase-header">
+            <div class="phase-num">1</div>
+            <div class="phase-title">Configuración Base y Autenticación</div>
+            <div class="phase-duration">Semanas 1–2</div>
+          </div>
+          <div class="phase-body">
+            <ul>
+              <li>Configuración del repositorio, Docker Compose con todos los servicios</li>
+              <li>Estructura base de FastAPI con módulos, middlewares y configuración</li>
+              <li>Modelos de datos PostgreSQL y primeras migraciones con Alembic</li>
+              <li>Sistema de autenticación JWT completo con refresh tokens</li>
+              <li>CRUD básico de usuarios y roles</li>
+              <li>Estructura base de Next.js con Tailwind, shadcn/ui y sistema de rutas</li>
+              <li>Pantalla de login funcional y conexión con API</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="phase-card">
+          <div class="phase-header">
+            <div class="phase-num">2</div>
+            <div class="phase-title">Gestión Institucional y Estructura Escolar</div>
+            <div class="phase-duration">Semanas 3–4</div>
+          </div>
+          <div class="phase-body">
+            <ul>
+              <li>CRUD de institución, grados y salones</li>
+              <li>Categorización automática por grado (A: 1–5, B: 6–11)</li>
+              <li>Gestión de periodos de competencia (crear, activar, cerrar)</li>
+              <li>Panel de administración de usuarios y permisos</li>
+              <li>Configuración de materiales reciclables y reglas de puntuación</li>
+              <li>Pantallas de gestión en frontend con validaciones</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="phase-card">
+          <div class="phase-header">
+            <div class="phase-num">3</div>
+            <div class="phase-title">Integración IoT y Motor de Eventos</div>
+            <div class="phase-duration">Semanas 5–7</div>
+          </div>
+          <div class="phase-body">
+            <ul>
+              <li>Servicio de ingestión IoT con MQTT Broker (Mosquitto)</li>
+              <li>Registro y autenticación de contenedores inteligentes</li>
+              <li>Motor de validación de eventos: lógica cámara + sensor</li>
+              <li>Asignación automática de puntos al salón vinculado</li>
+              <li>Manejo de eventos duplicados, rechazados y cancelados</li>
+              <li>Heartbeat y detección de dispositivos offline</li>
+              <li>Almacenamiento de evidencias en MinIO</li>
+              <li>Agente del dispositivo Raspberry Pi (camera, sensor, MQTT publisher)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="phase-card">
+          <div class="phase-header">
+            <div class="phase-num">4</div>
+            <div class="phase-title">Rankings, Dashboard y Tiempo Real</div>
+            <div class="phase-duration">Semanas 8–9</div>
+          </div>
+          <div class="phase-body">
+            <ul>
+              <li>Motor de ranking con caché Redis</li>
+              <li>WebSocket para actualizaciones en tiempo real del ranking</li>
+              <li>Dashboard principal con KPIs y gráficas</li>
+              <li>Pantalla de ranking general y por categoría</li>
+              <li>Detalle de salón con historial de eventos</li>
+              <li>Pantalla pública de ranking para kioscos del colegio</li>
+              <li>Panel de monitoreo de contenedores inteligentes</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="phase-card">
+          <div class="phase-header">
+            <div class="phase-num">5</div>
+            <div class="phase-title">Reportes, Incidencias y Auditoría</div>
+            <div class="phase-duration">Semanas 10–11</div>
+          </div>
+          <div class="phase-body">
+            <ul>
+              <li>Módulo de incidencias y revisión manual de eventos</li>
+              <li>Sistema de auditoría: log de todas las acciones sensibles</li>
+              <li>Generación de reportes PDF y exportación CSV</li>
+              <li>Cierre de periodo y publicación de ganadores</li>
+              <li>Historial de periodos archivados</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="phase-card">
+          <div class="phase-header">
+            <div class="phase-num">6</div>
+            <div class="phase-title">QA, Seguridad, Documentación y Despliegue</div>
+            <div class="phase-duration">Semanas 12–14</div>
+          </div>
+          <div class="phase-body">
+            <ul>
+              <li>Pruebas unitarias e integración (cobertura &gt; 80% en módulos críticos)</li>
+              <li>Auditoría de seguridad: revisión de JWT, rate limiting, inputs</li>
+              <li>Documentación técnica y manual de usuario</li>
+              <li>Pipeline CI/CD con GitHub Actions</li>
+              <li>Configuración de Nginx como reverse proxy</li>
+              <li>Despliegue en servidor de producción</li>
+              <li>Monitoreo con Sentry y logs estructurados</li>
+              <li>Capacitación al equipo administrativo del colegio</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- ══ SECCIÓN 14: PRUEBAS ══ -->
+    <article class="section" id="sec-pruebas">
+      <div class="section-header" onclick="toggleSection(this)">
+        <div class="section-num">14</div>
+        <span class="section-icon">🧪</span>
+        <h2>Estrategia de Pruebas</h2>
+        <span class="toggle-icon">▼</span>
+      </div>
+      <div class="section-body">
+
+        <h3>Pruebas de Backend — Pytest</h3>
+        <ul>
+          <li><strong>Unitarias:</strong> lógica de validación de eventos (cámara + sensor), calculadora de puntos, generador de rankings, reglas de periodo</li>
+          <li><strong>Integración:</strong> endpoints de la API con base de datos de prueba (SQLite o PostgreSQL en contenedor), flujo completo desde ingestión IoT hasta actualización del ranking</li>
+          <li><strong>Autenticación:</strong> JWT válido, expirado, roles insuficientes, device key incorrecta</li>
+          <li><strong>Casos edge:</strong> evento duplicado, sensor sin cámara, cámara sin sensor, contenedor offline, periodo cerrado</li>
+        </ul>
+
+        <div class="code-block">
+<span class="cmnt"># Ejemplo de prueba crítica — validación de evento doble</span>
+<span class="kw">def</span> <span class="key">test_evento_solo_valido_si_camara_y_sensor</span>(client, db_session):
+    <span class="cmnt"># Solo cámara → debe quedar como cancelado</span>
+    payload_solo_camara = {
+        <span class="str">"contenedor_id"</span>: <span class="val">"ECO-001"</span>,
+        <span class="str">"material_detectado"</span>: <span class="val">"plastic_pet"</span>,
+        <span class="str">"confianza"</span>: <span class="val">0.92</span>,
+        <span class="str">"sensor_confirmado"</span>: <span class="val">False</span>
+    }
+    res = client.post(<span class="str">"/api/v1/eventos/ingest"</span>, json=payload_solo_camara)
+    <span class="kw">assert</span> res.status_code == <span class="val">200</span>
+    <span class="kw">assert</span> res.json()[<span class="str">"estado"</span>] == <span class="val">"cancelado"</span>
+    <span class="kw">assert</span> res.json()[<span class="str">"puntos_asignados"</span>] == <span class="val">0</span>
+        </div>
+
+        <h3>Pruebas de Frontend — Vitest + Testing Library</h3>
+        <ul>
+          <li>Renderizado correcto de componentes de ranking por categoría</li>
+          <li>Actualización del ranking al recibir mensaje WebSocket</li>
+          <li>Formularios de creación de salón y periodo con validaciones</li>
+          <li>Redirección correcta por rol después del login</li>
+          <li>Estados de carga y error en todas las pantallas principales</li>
+        </ul>
+
+        <h3>Pruebas del Dispositivo IoT</h3>
+        <ul>
+          <li>Simulador de eventos MQTT para pruebas sin hardware físico</li>
+          <li>Prueba de reconexión automática al recuperar conectividad</li>
+          <li>Prueba de cola offline: eventos guardados localmente y sincronizados</li>
+          <li>Prueba de detección de material no reciclable: debe rechazarse sin puntos</li>
+        </ul>
+
+        <h3>Pruebas de Carga</h3>
+        <ul>
+          <li>Herramienta: Locust o k6</li>
+          <li>Escenario: 50 contenedores enviando eventos simultáneamente en hora punta escolar</li>
+          <li>Objetivo: latencia API &lt; 200 ms en el 95% de requests</li>
+        </ul>
+
+      </div>
+    </article>
+
+    <!-- ══ SECCIÓN 15: DOCUMENTACIÓN ══ -->
+    <article class="section" id="sec-docs">
+      <div class="section-header" onclick="toggleSection(this)">
+        <div class="section-num">15</div>
+        <span class="section-icon">📚</span>
+        <h2>Documentación del Proyecto</h2>
+        <span class="toggle-icon">▼</span>
+      </div>
+      <div class="section-body">
+
+        <h3>Documentación Técnica</h3>
+        <ul>
+          <li><strong>README.md:</strong> visión del proyecto, arquitectura resumida, instrucciones de instalación, contribución</li>
+          <li><strong>docs/arquitectura.md:</strong> diagrama de arquitectura (referenciado, no ASCII), decisiones técnicas justificadas, flujo de datos entre componentes</li>
+          <li><strong>docs/api-endpoints.md:</strong> complemento a Swagger con ejemplos de uso, payloads y respuestas típicas</li>
+          <li><strong>docs/modelo-datos.md:</strong> entidades, relaciones, restricciones y reglas de negocio del esquema de base de datos</li>
+          <li><strong>docs/guia-hardware.md:</strong> instrucciones de montaje del contenedor inteligente, configuración del Raspberry Pi, calibración del sensor, instalación del agente</li>
+        </ul>
+
+        <h3>Documentación Funcional</h3>
+        <ul>
+          <li><strong>docs/manual-usuario.md:</strong> guía paso a paso para administrador, coordinador ambiental y técnico</li>
+          <li>Capturas de pantalla comentadas de los flujos principales</li>
+          <li>Descripción del proceso de competencia: inicio, seguimiento y cierre</li>
+          <li>Preguntas frecuentes y solución a problemas comunes</li>
+        </ul>
+
+        <h3>Documentación API — Automática</h3>
+        <ul>
+          <li>Swagger UI disponible en <code style="font-family:monospace;background:#f3f4f6;padding:2px 6px;border-radius:4px;">/docs</code></li>
+          <li>ReDoc disponible en <code style="font-family:monospace;background:#f3f4f6;padding:2px 6px;border-radius:4px;">/redoc</code></li>
+          <li>OpenAPI JSON exportable en <code style="font-family:monospace;background:#f3f4f6;padding:2px 6px;border-radius:4px;">/openapi.json</code></li>
+        </ul>
+
+      </div>
+    </article>
+
+    <!-- ══ SECCIÓN 16: INSTRUCCIONES ══ -->
+    <article class="section" id="sec-instalacion">
+      <div class="section-header" onclick="toggleSection(this)">
+        <div class="section-num">16</div>
+        <span class="section-icon">🚀</span>
+        <h2>Instrucciones para Correr el Proyecto</h2>
+        <span class="toggle-icon">▼</span>
+      </div>
+      <div class="section-body">
+
+        <h3>Requisitos Previos</h3>
+        <ul>
+          <li>Docker Engine 24+ y Docker Compose 2.20+</li>
+          <li>Git 2.40+</li>
+          <li>Node.js 20 LTS (solo para desarrollo local del frontend)</li>
+          <li>Python 3.12 (solo para desarrollo local del backend)</li>
+        </ul>
+
+        <h3>Levantamiento con Docker (Recomendado)</h3>
+        <div class="code-block">
+<span class="cmnt"># 1. Clonar el repositorio</span>
+git clone https://github.com/tu-org/ecoranking.git
+cd ecoranking
+
+<span class="cmnt"># 2. Copiar variables de entorno</span>
+cp .env.example .env
+<span class="cmnt"># Editar .env con los valores reales</span>
+
+<span class="cmnt"># 3. Levantar todos los servicios</span>
+docker compose up -d
+
+<span class="cmnt"># 4. Ejecutar migraciones de base de datos</span>
+docker compose exec backend alembic upgrade head
+
+<span class="cmnt"># 5. Cargar datos semilla</span>
+docker compose exec backend python infra/scripts/seed.py
+
+<span class="cmnt"># 6. Verificar que todo esté corriendo</span>
+docker compose ps
+        </div>
+
+        <h3>Variables de Entorno (.env.example)</h3>
+        <div class="code-block">
+<span class="cmnt"># Base de datos</span>
+<span class="key">DATABASE_URL</span>=<span class="str">postgresql+asyncpg://eco:password@postgres:5432/ecoranking</span>
+
+<span class="cmnt"># Redis</span>
+<span class="key">REDIS_URL</span>=<span class="str">redis://redis:6379/0</span>
+
+<span class="cmnt"># JWT</span>
+<span class="key">JWT_SECRET_KEY</span>=<span class="str">your-super-secret-key-change-this</span>
+<span class="key">JWT_ALGORITHM</span>=<span class="str">HS256</span>
+<span class="key">ACCESS_TOKEN_EXPIRE_MINUTES</span>=<span class="val">15</span>
+<span class="key">REFRESH_TOKEN_EXPIRE_DAYS</span>=<span class="val">7</span>
+
+<span class="cmnt"># MinIO</span>
+<span class="key">MINIO_ENDPOINT</span>=<span class="str">minio:9000</span>
+<span class="key">MINIO_ACCESS_KEY</span>=<span class="str">minioadmin</span>
+<span class="key">MINIO_SECRET_KEY</span>=<span class="str">minioadmin123</span>
+<span class="key">MINIO_BUCKET_EVIDENCIAS</span>=<span class="str">ecoranking-evidencias</span>
+
+<span class="cmnt"># MQTT</span>
+<span class="key">MQTT_BROKER_HOST</span>=<span class="str">mosquitto</span>
+<span class="key">MQTT_BROKER_PORT</span>=<span class="val">1883</span>
+<span class="key">MQTT_TOPIC_EVENTOS</span>=<span class="str">ecoranking/eventos</span>
+
+<span class="cmnt"># Sentry (Monitoreo de errores)</span>
+<span class="key">SENTRY_DSN</span>=<span class="str">https://your-sentry-dsn</span>
+
+<span class="cmnt"># Frontend</span>
+<span class="key">NEXT_PUBLIC_API_URL</span>=<span class="str">http://localhost:8000</span>
+<span class="key">NEXT_PUBLIC_WS_URL</span>=<span class="str">ws://localhost:8000</span>
+        </div>
+
+        <h3>URLs de Acceso Local</h3>
+        <ul>
+          <li>🌐 <strong>Frontend (Panel Admin):</strong> <code style="font-family:monospace;">http://localhost:3000</code></li>
+          <li>⚙️ <strong>API Backend:</strong> <code style="font-family:monospace;">http://localhost:8000</code></li>
+          <li>📖 <strong>Swagger Docs:</strong> <code style="font-family:monospace;">http://localhost:8000/docs</code></li>
+          <li>🗄️ <strong>MinIO Console:</strong> <code style="font-family:monospace;">http://localhost:9001</code></li>
+        </ul>
+
+        <h3>Credenciales Semilla</h3>
+        <div class="code-block">
+<span class="cmnt"># Usuario administrador por defecto</span>
+<span class="key">Email</span>:    <span class="str">admin@ecoranking.edu</span>
+<span class="key">Password</span>: <span class="str">EcoAdmin2025!</span>
+<span class="cmnt"># ⚠ Cambiar inmediatamente en producción</span>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- ══ SECCIÓN 17: RIESGOS ══ -->
+    <article class="section" id="sec-riesgos">
+      <div class="section-header" onclick="toggleSection(this)">
+        <div class="section-num">17</div>
+        <span class="section-icon">⚠️</span>
+        <h2>Riesgos, Supuestos y Decisiones Técnicas</h2>
+        <span class="toggle-icon">▼</span>
+      </div>
+      <div class="section-body">
+
+        <h3>Riesgos Identificados</h3>
+
+        <div class="warning-box">
+          <p><strong>Riesgo 1 — Precisión del modelo de visión:</strong> el modelo TFLite de clasificación de materiales puede tener baja precisión en condiciones de iluminación variables dentro del colegio. Mitigación: umbral mínimo de confianza configurable (ej: 75%), opción de revisión manual de eventos con confianza baja, y mejora continua del modelo con datos reales recopilados en campo.</p>
+        </div>
+
+        <div class="warning-box">
+          <p><strong>Riesgo 2 — Conectividad de red escolar:</strong> los colegios pueden tener Wi-Fi inestable. Mitigación: el agente del dispositivo implementa almacenamiento local offline con sincronización automática al reconectar. El sistema detecta dispositivos sin heartbeat y genera alertas al técnico.</p>
+        </div>
+
+        <div class="warning-box">
+          <p><strong>Riesgo 3 — Manipulación del sistema:</strong> estudiantes podrían intentar activar el sensor sin pasar por la cámara o presentar material inválido repetidamente. Mitigación: validación doble obligatoria, umbral de tiempo entre eventos del mismo contenedor, logs de todos los eventos incluyendo rechazados, posibilidad de revisión manual de incidencias sospechosas.</p>
+        </div>
+
+        <h3>Supuestos Técnicos Declarados</h3>
+        <ul>
+          <li>El colegio dispone de red Wi-Fi con cobertura en las zonas donde se instalan los contenedores</li>
+          <li>El modelo de visión artificial inicial será entrenado con datasets públicos de materiales reciclables comunes y refinado con datos reales del colegio</li>
+          <li>Cada contenedor inteligente está permanentemente asignado a un salón específico; si se reubica, el técnico debe actualizar la vinculación en el sistema</li>
+          <li>El sistema se despliega inicialmente en una sola institución educativa</li>
+          <li>La salida pedagógica como premio es gestionada logísticamente por la institución, no por el sistema</li>
+          <li>Se asume acceso a un servidor propio de la institución o a un servidor cloud básico (2 vCPU, 4 GB RAM mínimo)</li>
+        </ul>
+
+        <h3>Decisiones Técnicas Clave</h3>
+        <ul>
+          <li><strong>MQTT sobre HTTP para IoT:</strong> MQTT es más eficiente en dispositivos con recursos limitados y redes inestables. Soporta QoS levels para garantía de entrega. Es el estándar industrial para IoT.</li>
+          <li><strong>FastAPI sobre Django:</strong> rendimiento asíncrono nativo superior, validación Pydantic integrada, menor overhead para API REST pura, documentación Swagger automática de calidad.</li>
+          <li><strong>Next.js sobre React SPA puro:</strong> la pantalla pública de ranking puede beneficiarse del SSR/SSG de Next.js para carga rápida y eventual indexación, sin sacrificar la SPA para el panel administrativo.</li>
+          <li><strong>PostgreSQL como única base de datos:</strong> toda la información de EcoRanking tiene estructura relacional clara. Usar MongoDB o similar añadiría complejidad sin beneficio real para este caso de uso.</li>
+          <li><strong>Redis para ranking en caché:</strong> el ranking puede ser consultado con alta frecuencia (pantallas públicas actualizándose cada segundos). Calcularlo en PostgreSQL en cada petición sería ineficiente. Redis permite invalidación puntual.</li>
+        </ul>
+
+      </div>
+    </article>
+
+    <!-- ══ SECCIÓN FINAL: EXPLICACIÓN COMPLETA ══ -->
+    <article class="section" id="sec-explicacion" style="border: 2px solid #10b981;">
+      <div class="section-header" onclick="toggleSection(this)" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5);">
+        <div class="section-num" style="background: linear-gradient(135deg, #064e3b, #047857);">💡</div>
+        <span class="section-icon">🌟</span>
+        <h2 style="color: #064e3b;">Explicación Final Completa del Proyecto EcoRanking</h2>
+        <span class="toggle-icon">▼</span>
+      </div>
+      <div class="section-body">
+
+        <div class="highlight-box">
+          <p>Esta sección explica de forma extensa y clara todo el proyecto: qué es, para qué sirve, quién lo usa, cómo funciona cada parte y por qué se tomaron las decisiones que se tomaron. Está pensada para ser leída tanto por técnicos como por personas con perfil institucional o pedagógico.</p>
+        </div>
+
+        <h3>¿Qué es EcoRanking?</h3>
+        <p>
+          EcoRanking es un sistema de software completo para instituciones educativas que combina tecnología de Internet de las Cosas (IoT), visión artificial e inteligencia de datos para transformar el reciclaje escolar en una actividad medible, automática y motivadora. Consiste en tres partes integradas: contenedores de basura inteligentes instalados en el colegio, un servidor backend que procesa y almacena toda la información, y un panel web administrativo que visualiza los resultados y permite gestionar el programa.
+        </p>
+
+        <h3>¿Cuál es su propósito?</h3>
+        <p>
+          Su propósito fundamental es resolver un problema concreto en los colegios: las campañas de reciclaje voluntarias no tienen seguimiento verificable, dependen del registro manual de docentes y pierden tracción rápidamente porque los estudiantes no ven resultados tangibles. EcoRanking introduce un sistema de puntos automático, transparente y justo: cada depósito válido se registra en tiempo real, los puntos se acumulan por salón y el ranking es visible para todos. El incentivo (una salida pedagógica) convierte la sostenibilidad en una competencia sana que mantiene la motivación durante todo el año escolar.
+        </p>
+
+        <h3>¿Quién lo va a usar y para qué?</h3>
+        <p>
+          Lo usan cinco tipos de usuarios. El <strong>Administrador</strong> gestiona todo el sistema: crea los grados, los salones, configura los periodos de competencia, registra los contenedores, define qué materiales son válidos y cuántos puntos vale cada uno, y tiene acceso total a reportes y auditoría. El <strong>Coordinador Ambiental</strong> (un docente designado) sigue el progreso del programa, revisa incidencias y descarga reportes para presentar en reuniones de padres o informes institucionales. El <strong>Técnico</strong> registra y mantiene los contenedores físicos, atiende fallos de hardware y monitorea que todos los dispositivos estén conectados. El <strong>Visor Institucional</strong> (rector, directivos) consulta el estado del programa sin modificar nada. Finalmente, el <strong>Público Escolar</strong> (estudiantes y docentes de aula) ve el ranking en pantallas informativas del colegio sin necesidad de iniciar sesión.
+        </p>
+
+        <h3>¿Cómo funciona el contenedor inteligente?</h3>
+        <p>
+          El contenedor inteligente es el corazón físico del sistema. Internamente tiene una <strong>cámara</strong> orientada hacia la abertura de depósito, un <strong>sensor</strong> (de presencia, infrarrojo o peso) dentro del contenedor, un <strong>procesador embebido</strong> (Raspberry Pi 4) que coordina todo, un <strong>módulo Wi-Fi</strong> para comunicarse con el servidor y un <strong>indicador LED</strong> que confirma visualmente al estudiante que su depósito fue registrado.
+        </p>
+        <p>
+          El proceso es el siguiente: cuando un estudiante acerca un objeto reciclable a la abertura, la cámara toma una foto y el modelo de visión artificial (TensorFlow Lite corriendo localmente en el Raspberry Pi) clasifica el material: ¿es plástico? ¿aluminio? ¿cartón? Si el material es reconocido como reciclable válido con una confianza mayor al umbral configurado (ej: 75%), el sistema espera la confirmación del sensor. Si dentro de los siguientes 10 segundos el sensor detecta que el objeto fue físicamente introducido en el contenedor, el evento se considera válido. El LED parpadea en verde, el Raspberry Pi envía el evento al servidor mediante MQTT, y el servidor suma los puntos correspondientes al salón vinculado a ese contenedor. Si cualquiera de las dos condiciones falla, los puntos no se asignan y el evento queda registrado como rechazado o cancelado, con su razón de rechazo.
+        </p>
+
+        <h3>¿Cómo se conectan frontend, backend y base de datos?</h3>
+        <p>
+          El <strong>frontend</strong> (Next.js/React) es la interfaz visual del panel administrativo. Corre en el navegador del usuario y se comunica con el <strong>backend</strong> (FastAPI/Python) mediante peticiones HTTPS REST para obtener datos y hacer cambios (CRUD), y mediante una conexión WebSocket para recibir actualizaciones en tiempo real del ranking sin necesidad de recargar la página. El <strong>backend</strong> recibe esas peticiones, aplica las reglas de negocio (validar permisos, calcular puntajes, verificar estados), y lee o escribe en <strong>PostgreSQL</strong> (la base de datos relacional) donde se almacena toda la información de forma permanente. Para el ranking activo, el backend consulta primero <strong>Redis</strong> (caché en memoria) en lugar de recalcular desde la base de datos en cada petición, lo que hace la respuesta prácticamente instantánea. Las imágenes capturadas por la cámara como evidencia se guardan en <strong>MinIO</strong> (almacenamiento de objetos compatible con S3) y el backend guarda en PostgreSQL solo la URL de referencia.
+        </p>
+
+        <h3>¿Cómo se integran la cámara y el sensor con el backend?</h3>
+        <p>
+          Los contenedores inteligentes no se comunican directamente con la base de datos. Existe un <strong>servicio de ingestión IoT</strong> separado que actúa como intermediario. Los contenedores publican sus eventos en un <strong>broker MQTT</strong> (Mosquitto) en un topic específico (ej: <code>ecoranking/eventos/ECO-001</code>). El servicio de ingestión está suscrito a ese topic, recibe cada mensaje en tiempo real, verifica la autenticación del dispositivo mediante su API key, valida el formato del evento y lo coloca en una cola interna (Redis Streams). El backend principal consume esa cola de forma asíncrona, aplica las reglas de negocio (¿es un periodo activo? ¿el contenedor está vinculado a un salón? ¿el material tiene puntos asignados?) y registra el evento en la base de datos. Este diseño garantiza que si el backend tiene un pico de carga, los eventos no se pierden: esperan en la cola hasta ser procesados.
+        </p>
+
+        <h3>¿Por qué se eligió cada tecnología?</h3>
+        <p>
+          <strong>FastAPI</strong> fue elegido porque es el framework Python más rápido para APIs REST, tiene validación automática con Pydantic (que previene errores de datos), genera documentación Swagger automáticamente y soporta programación asíncrona nativa, esencial para manejar múltiples eventos IoT simultáneos sin bloquear. <strong>Next.js</strong> fue elegido sobre un SPA puro porque permite renderizado en servidor para la pantalla pública de ranking (carga más rápida) mientras mantiene la interactividad de React para el panel administrativo. <strong>PostgreSQL</strong> fue elegido sobre MongoDB porque todos los datos de EcoRanking tienen estructura relacional clara y definida, y PostgreSQL ofrece transacciones ACID que garantizan que los puntos nunca se duplican ni se pierden. <strong>Redis</strong> fue elegido para el caché del ranking porque puede ser consultado miles de veces por segundo sin degradar el rendimiento. <strong>MQTT</strong> fue elegido para la comunicación IoT porque es el protocolo estándar del sector: consume muy poco ancho de banda, funciona bien en redes inestables y soporta mecanismos de reintento de entrega. <strong>Raspberry Pi 4</strong> fue elegido como hardware embebido porque tiene la potencia necesaria para ejecutar un modelo de visión artificial local (TFLite), tiene GPIO para conectar el sensor, tiene soporte Python nativo para el agente y es ampliamente documentado y accesible económicamente.
+        </p>
+
+        <h3>¿Cómo fluye la información de un depósito hasta el ranking?</h3>
+        <p>
+          Un estudiante deposita una botella plástica → la cámara captura la imagen → TFLite clasifica como "plastic_pet" con 89% de confianza → el sensor detecta el depósito dentro de 5 segundos → el LED parpadea verde → el agente del Raspberry Pi publica en MQTT el payload del evento (contenedor ID, material, timestamps, confianza) → el broker Mosquitto lo recibe y lo entrega al servicio de ingestión → el servicio verifica la API key del dispositivo y pública en Redis Streams → el backend consume el evento → verifica que el contenedor ECO-003 está vinculado al salón "4B" del periodo activo → consulta la regla: plástico = 10 puntos → crea el registro en evento_reciclaje con estado "válido" → actualiza el puntaje_acumulado del salón 4B (+10 puntos) → invalida el caché del ranking en Redis → el WebSocket notifica al frontend → el ranking se actualiza en pantalla en menos de 2 segundos desde el momento del depósito.
+        </p>
+
+        <h3>¿Cómo se protegen los datos?</h3>
+        <p>
+          Toda comunicación web usa HTTPS con certificado TLS. Las contraseñas nunca se almacenan en texto plano: se hashean con bcrypt con un factor de costo de 12, lo que hace prácticamente imposible revertirlas. Los tokens JWT expiran en 15 minutos y los refresh tokens en 7 días. Los contenedores se autentican con API keys hasheadas únicas por dispositivo. La API tiene rate limiting para prevenir abuso. El sistema usa un ORM (SQLAlchemy) para todas las consultas a la base de datos, lo que elimina el riesgo de inyección SQL. Los inputs del frontend son sanitizados antes de enviarse al backend. Toda acción administrativa sensible (cambiar reglas de puntos, cerrar un periodo, publicar ganadores) queda registrada en el log de auditoría con usuario, IP, fecha y hora.
+        </p>
+
+        <h3>¿Cómo se generan los rankings?</h3>
+        <p>
+          El ranking no se recalcula desde cero en cada consulta. El sistema mantiene en la tabla <code>puntaje_acumulado</code> el total de puntos de cada salón por periodo, actualizado en tiempo real con cada evento válido. Cuando se consulta el ranking, el backend obtiene esos totales agrupados por categoría (A o B), los ordena de mayor a menor y los devuelve. Este resultado se guarda en Redis con una clave como <code>ranking:periodo:abc123:categoria:A</code> y expira o se invalida cuando hay un nuevo evento. Así, el 99% de las consultas de ranking responden desde memoria en menos de 10 ms.
+        </p>
+
+        <h3>¿Cómo se despliega y mantiene el sistema?</h3>
+        <p>
+          Todo el sistema está containerizado con Docker. Un archivo <code>docker-compose.yml</code> levanta en un solo comando: el backend FastAPI, el servicio IoT, el broker MQTT, PostgreSQL, Redis, MinIO y Nginx como proxy inverso. Para producción se usa un servidor Ubuntu con Docker (puede ser un servidor propio del colegio o uno cloud económico). El pipeline CI/CD con GitHub Actions ejecuta las pruebas automáticamente en cada push y despliega automáticamente al servidor de producción cuando se aprueba un merge a la rama principal. El mantenimiento incluye: backups automáticos diarios de PostgreSQL, monitoreo de errores con Sentry, revisión mensual de logs con Loguru, actualizaciones de seguridad del sistema operativo y del firmware de los dispositivos.
+        </p>
+
+        <h3>¿Qué se puede mejorar después?</h3>
+        <ul>
+          <li>Desarrollar una <strong>app móvil</strong> para que los coordinadores reciban notificaciones y vean rankings desde el celular</li>
+          <li>Mejorar el <strong>modelo de visión artificial</strong> con los datos reales recopilados durante el primer año, aumentando la precisión de clasificación</li>
+          <li>Agregar <strong>gamificación extendida</strong>: insignias por hitos (primer depósito, 100 depósitos, racha semanal), animaciones de celebración, medallas por categoría de material</li>
+          <li>Expandir a <strong>multi-institución</strong>: gestionar varios colegios desde una sola plataforma, con competencia institucional regional si se desea</li>
+          <li>Integrar <strong>cálculo de impacto ambiental</strong>: convertir los kilos reciclados aproximados en CO₂ evitado, agua ahorrada y energía conservada para reportes de sostenibilidad</li>
+          <li>Implementar <strong>autenticación SSO</strong> con Google Workspace Edu para que docentes inicien sesión con sus cuentas institucionales existentes</li>
+          <li>Agregar <strong>notificaciones automáticas</strong> por email o WhatsApp al coordinador cuando un salón supera al líder, cuando un dispositivo falla o cuando se acerca el cierre del periodo</li>
+        </ul>
+
+      </div>
+    </article>
+
+  </main>
+
+  <!-- ────────────── SIDEBAR ────────────── -->
+  <aside class="sidebar" aria-label="Índice del documento">
+
+    <div class="widget">
+      <div class="widget-header">♻️ EcoRanking</div>
+      <div class="widget-body">
+        <p style="font-size:0.82rem;color:#6b7280;margin-bottom:14px;">Prompt Maestro Completo — Propuesta técnica integral para desarrollo.</p>
+        <div class="tag-row">
+          <span class="tag tag-green">IoT</span>
+          <span class="tag tag-blue">Web App</span>
+          <span class="tag tag-teal">Educación</span>
+          <span class="tag tag-amber">Gamificación</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="widget">
+      <div class="widget-header">📑 Índice de Secciones</div>
+      <div class="widget-body" style="padding: 10px;">
+        <a class="toc-link" href="#sec-vision"><span class="toc-num">1</span> Visión General</a>
+        <a class="toc-link" href="#sec-negocio"><span class="toc-num">2</span> Objetivo de Negocio</a>
+        <a class="toc-link" href="#sec-roles"><span class="toc-num">3</span> Usuarios y Roles</a>
+        <a class="toc-link" href="#sec-imagenes"><span class="toc-num">4</span> Imágenes y Diseño</a>
+        <a class="toc-link" href="#sec-pantallas"><span class="toc-num">5</span> Pantallas y Flujo</a>
+        <a class="toc-link" href="#sec-arquitectura"><span class="toc-num">6</span> Arquitectura</a>
+        <a class="toc-link" href="#sec-stack"><span class="toc-num">7</span> Stack Tecnológico</a>
+        <a class="toc-link" href="#sec-datos"><span class="toc-num">8</span> Modelo de Datos</a>
+        <a class="toc-link" href="#sec-funcionalidades"><span class="toc-num">9</span> Funcionalidades</a>
+        <a class="toc-link" href="#sec-nfr"><span class="toc-num">10</span> Req. No Funcionales</a>
+        <a class="toc-link" href="#sec-carpetas"><span class="toc-num">11</span> Estructura Carpetas</a>
+        <a class="toc-link" href="#sec-endpoints"><span class="toc-num">12</span> Endpoints API</a>
+        <a class="toc-link" href="#sec-plan"><span class="toc-num">13</span> Plan Implementación</a>
+        <a class="toc-link" href="#sec-pruebas"><span class="toc-num">14</span> Estrategia Pruebas</a>
+        <a class="toc-link" href="#sec-docs"><span class="toc-num">15</span> Documentación</a>
+        <a class="toc-link" href="#sec-instalacion"><span class="toc-num">16</span> Instalación</a>
+        <a class="toc-link" href="#sec-riesgos"><span class="toc-num">17</span> Riesgos</a>
+        <a class="toc-link" href="#sec-explicacion" style="background:#ecfdf5;color:#065f46;font-weight:700;">💡 Explicación Final</a>
+      </div>
+    </div>
+
+    <div class="widget">
+      <div class="widget-header">🛠️ Stack Resumido</div>
+      <div class="widget-body">
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <div style="display:flex;justify-content:space-between;font-size:0.82rem;padding:6px 10px;background:#f9fafb;border-radius:6px;">
+            <span style="font-weight:600;color:#374151;">Frontend</span>
+            <span style="color:#059669;">Next.js 14</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:0.82rem;padding:6px 10px;background:#f9fafb;border-radius:6px;">
+            <span style="font-weight:600;color:#374151;">Backend</span>
+            <span style="color:#059669;">FastAPI</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:0.82rem;padding:6px 10px;background:#f9fafb;border-radius:6px;">
+            <span style="font-weight:600;color:#374151;">Base de Datos</span>
+            <span style="color:#059669;">PostgreSQL 16</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:0.82rem;padding:6px 10px;background:#f9fafb;border-radius:6px;">
+            <span style="font-weight:600;color:#374151;">Caché</span>
+            <span style="color:#059669;">Redis 7</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:0.82rem;padding:6px 10px;background:#f9fafb;border-radius:6px;">
+            <span style="font-weight:600;color:#374151;">IoT</span>
+            <span style="color:#059669;">MQTT + RPi 4</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:0.82rem;padding:6px 10px;background:#f9fafb;border-radius:6px;">
+            <span style="font-weight:600;color:#374151;">Archivos</span>
+            <span style="color:#059669;">MinIO S3</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:0.82rem;padding:6px 10px;background:#f9fafb;border-radius:6px;">
+            <span style="font-weight:600;color:#374151;">Deploy</span>
+            <span style="color:#059669;">Docker</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="widget">
+      <div class="widget-header">📊 Resumen del Proyecto</div>
+      <div class="widget-body">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+          <div class="stat-badge"><span class="stat-val">17</span><span class="stat-lbl">Secciones</span></div>
+          <div class="stat-badge"><span class="stat-val">14</span><span class="stat-lbl">Pantallas</span></div>
+          <div class="stat-badge"><span class="stat-val">10</span><span class="stat-lbl">Entidades</span></div>
+          <div class="stat-badge"><span class="stat-val">30+</span><span class="stat-lbl">Endpoints</span></div>
+          <div class="stat-badge"><span class="stat-val">5</span><span class="stat-lbl">Roles</span></div>
+          <div class="stat-badge"><span class="stat-val">14</span><span class="stat-lbl">Semanas</span></div>
+        </div>
+      </div>
+    </div>
+
+  </aside>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-logo"><span>Eco</span>Ranking</div>
+  <p>Prompt Maestro de Desarrollo — Propuesta Técnica Integral</p>
+  <p style="margin-top:8px;">Elaborado por <strong>Ingeniero de Sistemas Senior</strong> · Arquitectura + Full-Stack + IoT + UX/UI + QA</p>
+  <p style="margin-top:8px; font-size:0.78rem; color:#4b5563;">
+    Stack: FastAPI · Next.js 14 · PostgreSQL 16 · Redis 7 · MQTT · Raspberry Pi 4 · TensorFlow Lite · Docker · MinIO
+  </p>
+</footer>
+
+<!-- ═══════════════════════════════════════════════════════════
+     JAVASCRIPT
+═══════════════════════════════════════════════════════════ -->
+<script>
+  /* ── Toggle de secciones ── */
+  function toggleSection(header) {
+    const section = header.parentElement;
+    section.classList.toggle('collapsed');
+  }
+
+  /* ── Highlight de nav activo según scroll ── */
+  const sections = document.querySelectorAll('article[id]');
+  const navBtns  = document.querySelectorAll('.nav-btn');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('id');
+        navBtns.forEach(btn => {
+          btn.classList.toggle('active', btn.getAttribute('href') === `#${id}`);
+        });
+      }
+    });
+  }, { rootMargin: '-30% 0px -60% 0px' });
+
+  sections.forEach(s => observer.observe(s));
+
+  /* ── Expandir sección al hacer clic en ToC ── */
+  document.querySelectorAll('.toc-link').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = link.getAttribute('href').slice(1);
+      const target   = document.getElementById(targetId);
+      if (target) {
+        target.classList.remove('collapsed');
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  /* ── Expandir sección al hacer clic en nav sticky ── */
+  document.querySelectorAll('.nav-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = btn.getAttribute('href').slice(1);
+      const target   = document.getElementById(targetId);
+      if (target) {
+        target.classList.remove('collapsed');
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
