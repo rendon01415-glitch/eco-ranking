@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoRanking — Sistema de Reciclaje Escolar</title>
+  <meta name="description" content="Plataforma gamificada de reciclaje escolar. Estudiantes, directores de grupo y administrador." />
+  <link rel="stylesheet" href="app.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♻️</text></svg>" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     PÁGINA DE LOGIN
+═══════════════════════════════════════════ -->
+<div id="login-page">
+  <div class="login-card">
+
+    <div class="login-logo">
+      <span class="eco-icon">♻️</span>
+      <h1><span>Eco</span><span style="color:var(--amber-500);">Ranking</span></h1>
+      <p>Plataforma de reciclaje escolar gamificado</p>
+    </div>
+
+    <div id="login-error"></div>
+
+    <form id="login-form">
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" placeholder="usuario@ecoranking.edu" autocomplete="email" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" placeholder="Tu contraseña" autocomplete="current-password" required />
+      </div>
+      <button type="submit" class="btn btn-primary">Iniciar Sesión →</button>
+    </form>
+
+    <!-- Acceso rápido demo -->
+    <div class="login-demo">
+      <h4>🚀 Acceso rápido de prueba</h4>
+
+      <div class="demo-item" onclick="fillDemo('admin@ecoranking.edu','Admin2025!')">
+        <div class="demo-info">
+          <div class="demo-name">Carlos Mendoza</div>
+          <div class="demo-email">admin@ecoranking.edu · Admin2025!</div>
+        </div>
+        <span class="demo-badge badge-admin">Admin</span>
+      </div>
+
+      <div class="demo-item" onclick="fillDemo('luisa.torres@eco.edu','Profe2025')">
+        <div class="demo-info">
+          <div class="demo-name">Prof. Luisa Torres — 4A</div>
+          <div class="demo-email">luisa.torres@eco.edu · Profe2025</div>
+        </div>
+        <span class="demo-badge badge-director">Director</span>
+      </div>
+
+      <div class="demo-item" onclick="fillDemo('sandra.gomez@eco.edu','Profe2025')">
+        <div class="demo-info">
+          <div class="demo-name">Prof. Sandra Gómez — 7A</div>
+          <div class="demo-email">sandra.gomez@eco.edu · Profe2025</div>
+        </div>
+        <span class="demo-badge badge-director">Director</span>
+      </div>
+
+      <div class="demo-item" onclick="fillDemo('sofia.ramirez@eco.edu','Eco2025')">
+        <div class="demo-info">
+          <div class="demo-name">Sofía Ramírez — Salón 4A</div>
+          <div class="demo-email">sofia.ramirez@eco.edu · Eco2025</div>
+        </div>
+        <span class="demo-badge badge-student">Estudiante</span>
+      </div>
+
+      <div class="demo-item" onclick="fillDemo('diego.castro@eco.edu','Eco2025')">
+        <div class="demo-info">
+          <div class="demo-name">Diego Castro — Salón 7A</div>
+          <div class="demo-email">diego.castro@eco.edu · Eco2025</div>
+        </div>
+        <span class="demo-badge badge-student">Estudiante</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     APP PRINCIPAL
+═══════════════════════════════════════════ -->
+<div id="app-page">
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <span>♻️</span>
+      <span><span class="brand-eco">Eco</span><span class="brand-rank">Ranking</span></span>
+    </div>
+
+    <div class="navbar-center" id="nav-tabs">
+      <!-- Se genera dinámicamente según rol -->
+    </div>
+
+    <div class="navbar-right">
+      <div class="user-pill">
+        <div class="user-avatar" id="nav-avatar"></div>
+        <div class="user-info">
+          <div class="user-name" id="nav-name"></div>
+          <div class="user-role" id="nav-role"></div>
+        </div>
+      </div>
+      <button class="btn-logout" id="btn-logout">Salir</button>
+    </div>
+  </nav>
+
+  <!-- ── CONTENIDO PRINCIPAL ── -->
+  <main class="app-main">
+
+    <!-- ====================================================
+         VISTAS ESTUDIANTE
+    ==================================================== -->
+    <section class="page-section" id="est-dashboard"></section>
+    <section class="page-section" id="est-ranking"></section>
+    <section class="page-section" id="est-historial"></section>
+
+    <!-- ====================================================
+         VISTAS DIRECTOR DE GRUPO
+    ==================================================== -->
+    <section class="page-section" id="dir-salon"></section>
+    <section class="page-section" id="dir-ranking"></section>
+    <section class="page-section" id="dir-historial"></section>
+
+    <!-- ====================================================
+         VISTAS ADMINISTRADOR
+    ==================================================== -->
+    <section class="page-section" id="admin-dashboard"></section>
+    <section class="page-section" id="admin-ranking"></section>
+    <section class="page-section" id="admin-salones"></section>
+    <section class="page-section" id="admin-puntos"></section>
+    <section class="page-section" id="admin-historial"></section>
+    <section class="page-section" id="admin-usuarios"></section>
+
+  </main>
+</div>
+
+<!-- ── TOASTS ── -->
+<div id="toast-container" class="toast-container"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
